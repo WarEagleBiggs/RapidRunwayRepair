@@ -5,25 +5,13 @@ using UnityEngine;
 public class SpawnPlane : MonoBehaviour
 {
     public GameObject objectToInstantiate;  // Prefab to instantiate
-    public Transform spawnPoint;            // Position to spawn the object
-    public float spawnInterval = 15f;       // Time interval between spawns
+    public Transform spawnPoint;
+    public Master masterScript;
 
-    private float elapsedTime;
 
-    private void Start()
+    public void Spawn()
     {
-        elapsedTime = 0f;
-    }
-
-    private void Update()
-    {
-        elapsedTime += Time.deltaTime;
-
-        if (elapsedTime >= spawnInterval)
-        {
-            GameObject obj = Instantiate(objectToInstantiate);
-            obj.SetActive(true);
-            elapsedTime = 0f;
-        }
+        GameObject obj = Instantiate(objectToInstantiate);
+        obj.SetActive(true);
     }
 }

@@ -8,7 +8,9 @@ public class Master : MonoBehaviour
 {
     public float duration = 5f;  // Duration of the timer in seconds
 
-    private float timer;
+    public float timer;
+
+    public SpawnPlane SpawnScript;
 
 
     public TextMeshProUGUI numTxt;
@@ -26,14 +28,18 @@ public class Master : MonoBehaviour
 
         if (timer <= 0f)
         {
-            // Timer has ended, perform desired actions here
-            Debug.Log("Timer ended!");
-
+            SpawnScript.Spawn();
             // Reset the timer for the next cycle
             timer = duration;
         }
         
         
         numTxt.SetText(timer.ToString("#0") + " SEC");
+    }
+
+    public void Skip()
+    {
+        SpawnScript.Spawn();
+        timer = 0;
     }
 }
