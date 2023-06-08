@@ -403,8 +403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 15
   timer: 0
-  SpawnScript: {fileID: 264641635}
   numTxt: {fileID: 1175681109}
+  hasHappened: 0
+  objectToInstantiate: {fileID: 2918908122470974231}
 --- !u!1 &264641633
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,9 +450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9532ab710d3aeb54b8087fc12b60da9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToInstantiate: {fileID: 2918908122470974231}
-  spawnPoint: {fileID: 538762802}
-  masterScript: {fileID: 247302658}
 --- !u!1 &336224989
 GameObject:
   m_ObjectHideFlags: 0

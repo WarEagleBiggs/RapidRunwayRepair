@@ -6,14 +6,13 @@ using TMPro;
 
 public class Master : MonoBehaviour
 {
-    public float duration = 5f;  // Duration of the timer in seconds
+    public float duration;
 
     public float timer;
 
-    public SpawnPlane SpawnScript;
-
-
     public TextMeshProUGUI numTxt;
+
+    public bool hasHappened;
 
     private void Start()
     {
@@ -24,22 +23,52 @@ public class Master : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         timer -= Time.deltaTime;
 
         if (timer <= 0f)
         {
-            SpawnScript.Spawn();
             // Reset the timer for the next cycle
             timer = duration;
+            
+            if (hasHappened)
+            {
+                hasHappened = false;
+            }
+            else
+            {
+                Skip();
+            }
+            
         }
         
         
         numTxt.SetText(timer.ToString("#0") + " SEC");
     }
 
+    
+    
+    public GameObject objectToInstantiate;  
+
+    public void Spawn()
+    {
+        
+        GameObject obj = Instantiate(objectToInstantiate);
+        obj.SetActive(true);
+        
+    }
+
     public void Skip()
     {
-        SpawnScript.Spawn();
-        timer = 0;
+
+        if (hasHappened == false)
+        {
+            hasHappened = true;
+            timer = 0;
+            Spawn();
+            
+        }
+        
+       
     }
 }
