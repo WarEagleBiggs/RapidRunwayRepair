@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Master : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class Master : MonoBehaviour
 
     public List<GameObject> planeList;
 
+    public AudioSource clickSfx;
 
     private void Start()
     {
@@ -64,6 +66,7 @@ public class Master : MonoBehaviour
 
     public void Skip()
     {
+        clickSfx.Play();
 
         if (hasHappened == false)
         {
@@ -77,7 +80,8 @@ public class Master : MonoBehaviour
     }
 
     public void HomeBtn()
-    {
+    {    
+        clickSfx.Play();
         SceneManager.LoadScene("Menu");
         
     }
