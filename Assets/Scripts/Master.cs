@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Master : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Master : MonoBehaviour
     public TextMeshProUGUI numTxt;
 
     public bool hasHappened;
+    
 
     private void Start()
     {
@@ -70,5 +72,11 @@ public class Master : MonoBehaviour
         }
         
        
+    }
+
+    public void HomeBtn()
+    {
+        SceneManager.LoadScene("Menu");
+        
     }
 }

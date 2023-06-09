@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HomeBtnScript : MonoBehaviour
+public class BackBtnScript : MonoBehaviour
 {
     public GameObject LevelSelect;
 
