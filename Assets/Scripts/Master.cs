@@ -14,7 +14,9 @@ public class Master : MonoBehaviour
     public TextMeshProUGUI numTxt;
 
     public bool hasHappened;
-    
+
+    public List<GameObject> planeList;
+
 
     private void Start()
     {
