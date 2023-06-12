@@ -22,11 +22,10 @@ public class Master : MonoBehaviour
     public bool isStar1Alive = true;
     public bool isStar2Alive = true;
     public bool isStar3Alive = true;
-    public GameObject star1;
-    public GameObject star2;
-    public GameObject star3;
-
-
+    public List<GameObject> Stars;
+    public List<GameObject> GrayStars;
+    public GameObject FailScreen;
+    public GameObject HmBtn;
     private void Start()
     {
         timer = duration;
@@ -96,22 +95,31 @@ public class Master : MonoBehaviour
     {
         if (isStar3Alive)
         {
-            star3.SetActive(false);
+            Stars[2].SetActive(false);
+            GrayStars[2].SetActive(true);
             isStar3Alive = false;
         }
         else if (isStar2Alive)
         {
-            star2.SetActive(false);
+            Stars[1].SetActive(false);
+            GrayStars[1].SetActive(true);
             isStar2Alive = false;
-        }
-        else if (isStar1Alive)
-        {
-            star1.SetActive(false);
-            isStar1Alive = false;
         }
         else
         {
-                
+            Stars[0].SetActive(false);
+            GrayStars[0].SetActive(true);
+            isStar1Alive = false;
+            FailScreen.SetActive(true);
+            HmBtn.SetActive(false);
         }
+
+    }
+    
+
+    public void Replay()
+    {
+        clickSfx.Play();
+        SceneManager.LoadScene(1);
     }
 }

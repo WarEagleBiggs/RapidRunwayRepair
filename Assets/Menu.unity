@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -157,6 +157,10 @@ MonoBehaviour:
   hasLevel2: 0
   hasLevel3: 0
   hasLevel4: 0
+  level1Stars: 0
+  level2Stars: 0
+  level3Stars: 0
+  level4Stars: 0
 --- !u!4 &10470441
 Transform:
   m_ObjectHideFlags: 0
@@ -929,6 +933,7 @@ MonoBehaviour:
   - {fileID: 1067321865}
   - {fileID: 1290724248}
   clickSfx: {fileID: 242966670}
+  sScript: {fileID: 10470440}
 --- !u!82 &242966670
 AudioSource:
   m_ObjectHideFlags: 0
