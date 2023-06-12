@@ -26,6 +26,9 @@ public class Master : MonoBehaviour
     public List<GameObject> GrayStars;
     public GameObject FailScreen;
     public GameObject HmBtn;
+    public GameObject WinScreen;
+    public bool isPlaying = true;
+    public int planeCount = 0;
     private void Start()
     {
         timer = duration;
@@ -35,28 +38,40 @@ public class Master : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        timer -= Time.deltaTime;
-
-        if (timer <= 0f)
+        if (isPlaying)
         {
-            // Reset the timer for the next cycle
-            timer = duration;
-            
-            if (hasHappened)
+            timer -= Time.deltaTime;
+
+            if (timer <= 0f)
             {
-                hasHappened = false;
+                // Reset the timer for the next cycle
+                timer = duration;
+
+                if (hasHappened)
+                {
+                    hasHappened = false;
+
+                }
+                else
+                {
+                    Skip();
+                }
+
             }
-            else
-            {
-                Skip();
-            }
-            
+
+            numTxt.SetText(timer.ToString("#0") + " SEC");
         }
-        
-        
-        numTxt.SetText(timer.ToString("#0") + " SEC");
-    }
+
+        if (planeCount >= 10)
+            {
+                isPlaying = false;
+            }
+            if (isPlaying == false && isStar1Alive)
+            {
+                WinScreen.SetActive(true);
+                HmBtn.SetActive(false);
+            }
+        }
 
     
     
@@ -72,17 +87,21 @@ public class Master : MonoBehaviour
 
     public void Skip()
     {
-        clickSfx.Play();
-
-        if (hasHappened == false)
+        if (isPlaying)
         {
-            hasHappened = true;
-            timer = 0;
-            Spawn();
-            
+
+            clickSfx.Play();
+
+            if (hasHappened == false)
+            {
+                hasHappened = true;
+                timer = 0;
+                Spawn();
+
+
+            }
         }
-        
-       
+
     }
 
     public void HomeBtn()
@@ -110,6 +129,7 @@ public class Master : MonoBehaviour
             Stars[0].SetActive(false);
             GrayStars[0].SetActive(true);
             isStar1Alive = false;
+            isPlaying = false;
             FailScreen.SetActive(true);
             HmBtn.SetActive(false);
         }
