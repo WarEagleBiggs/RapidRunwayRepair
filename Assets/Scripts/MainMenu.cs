@@ -16,12 +16,11 @@ public class MainMenu : MonoBehaviour
     public bool isLvl4Unlocked;
     public List<GameObject> LockList;
     public AudioSource clickSfx;
-    public Singleton sScript;
+    
     private void Update()
     {
-        isLvl2Unlocked = sScript.hasLevel2;
-        isLvl3Unlocked = sScript.hasLevel3;
-        isLvl4Unlocked = sScript.hasLevel4;
+        isLvl2Unlocked = Singleton.GetInstance.hasLevel2;
+        
         if (isLvl2Unlocked)
         {
             LockList[0].SetActive(false);

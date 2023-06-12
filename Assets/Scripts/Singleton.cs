@@ -18,6 +18,7 @@ public class Singleton : MonoBehaviour
     public int level3Stars;
     public int level4Stars;
 
+    public static Singleton GetInstance => instance;
 
     private void Awake()
     {
