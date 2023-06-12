@@ -19,6 +19,13 @@ public class Master : MonoBehaviour
     public List<GameObject> planeList;
 
     public AudioSource clickSfx;
+    public bool isStar1Alive = true;
+    public bool isStar2Alive = true;
+    public bool isStar3Alive = true;
+    public GameObject star1;
+    public GameObject star2;
+    public GameObject star3;
+
 
     private void Start()
     {
@@ -84,5 +91,27 @@ public class Master : MonoBehaviour
         clickSfx.Play();
         SceneManager.LoadScene("Menu");
         
+    }
+    public void LoseStar()
+    {
+        if (isStar3Alive)
+        {
+            star3.SetActive(false);
+            isStar3Alive = false;
+        }
+        else if (isStar2Alive)
+        {
+            star2.SetActive(false);
+            isStar2Alive = false;
+        }
+        else if (isStar1Alive)
+        {
+            star1.SetActive(false);
+            isStar1Alive = false;
+        }
+        else
+        {
+                
+        }
     }
 }

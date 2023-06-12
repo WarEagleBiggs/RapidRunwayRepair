@@ -12,7 +12,7 @@ public class PlaneInterp : MonoBehaviour
         public bool light;
         public bool medium;
         public bool heavy;
-    
+        public Master master;
         private float startTime;
         private float journeyLength;
     
@@ -41,7 +41,15 @@ public class PlaneInterp : MonoBehaviour
             if (other.tag == "crack")
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
-                rend.enabled = true;
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                }
             }
         }
+        
 }
