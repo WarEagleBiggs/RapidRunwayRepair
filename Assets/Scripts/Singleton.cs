@@ -13,7 +13,12 @@ public class Singleton : MonoBehaviour
     public bool hasLevel2;
     public bool hasLevel3;
     public bool hasLevel4;
-    
+    public int level1Stars;
+    public int level2Stars;
+    public int level3Stars;
+    public int level4Stars;
+
+
     private void Awake()
     {
         if (instance != null)
