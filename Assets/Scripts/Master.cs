@@ -29,6 +29,7 @@ public class Master : MonoBehaviour
     public GameObject WinScreen;
     public bool isPlaying = true;
     public int planeCount = 0;
+    public int starCount = 3;
     private void Start()
     {
         timer = duration;
@@ -63,18 +64,28 @@ public class Master : MonoBehaviour
         }
 
         if (planeCount >= 10)
-            {
-                isPlaying = false;
-            }
+        {
+            isPlaying = false;
+
             if (isPlaying == false && isStar1Alive)
             {
                 WinScreen.SetActive(true);
                 HmBtn.SetActive(false);
+                if (Singleton.GetInstance.level1Stars < starCount)
+                {
+                    Singleton.GetInstance.level1Stars = starCount;
+                }
+
+                if (starCount >= 2)
+                {
+                    Singleton.GetInstance.hasLevel2 = true;
+                }
             }
         }
+    }
 
-    
-    
+
+
     public GameObject objectToInstantiate;  
 
     public void Spawn()
@@ -112,6 +123,7 @@ public class Master : MonoBehaviour
     }
     public void LoseStar()
     {
+        starCount--;
         if (isStar3Alive)
         {
             Stars[2].SetActive(false);
@@ -142,4 +154,6 @@ public class Master : MonoBehaviour
         clickSfx.Play();
         SceneManager.LoadScene(1);
     }
+
+  
 }
