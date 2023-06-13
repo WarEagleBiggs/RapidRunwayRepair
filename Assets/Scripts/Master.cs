@@ -28,6 +28,7 @@ public class Master : MonoBehaviour
     public GameObject FailScreen;
     public GameObject HmBtn;
     public GameObject WinScreen;
+    public GameObject MaterialScreen;
     public bool isPlaying = true;
     public int planeCount = 10;
     public int starCount = 3;
@@ -157,5 +158,9 @@ public class Master : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-  
+    public void CloseMaterial()
+    {
+        clickSfx.Play();
+        MaterialScreen.SetActive(false);
+    }
 }
