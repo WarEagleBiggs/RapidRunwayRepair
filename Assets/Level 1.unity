@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -538,6 +538,7 @@ MonoBehaviour:
   duration: 15
   timer: 0
   numTxt: {fileID: 1175681109}
+  planeTxt: {fileID: 1231526032}
   hasHappened: 0
   planeList: []
   clickSfx: {fileID: 247302659}
@@ -556,7 +557,7 @@ MonoBehaviour:
   HmBtn: {fileID: 887270627}
   WinScreen: {fileID: 1303372349}
   isPlaying: 1
-  planeCount: 0
+  planeCount: 10
   starCount: 3
   objectToInstantiate: {fileID: 2918908122470974231}
 --- !u!82 &247302659
@@ -2737,7 +2738,7 @@ GameObject:
   - component: {fileID: 1159112591}
   - component: {fileID: 1159112590}
   m_Layer: 5
-  m_Name: Back
+  m_Name: PlaneBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2950,7 +2951,7 @@ GameObject:
   - component: {fileID: 1231526033}
   - component: {fileID: 1231526032}
   m_Layer: 5
-  m_Name: Currency (1)
+  m_Name: planeCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

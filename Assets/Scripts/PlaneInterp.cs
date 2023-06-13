@@ -32,7 +32,7 @@ public class PlaneInterp : MonoBehaviour
             if (fractionOfJourney >= 1f)
             {
                 Destroy(gameObject);
-                master.planeCount++;
+                master.planeCount--;
             }
         }
 

@@ -13,6 +13,7 @@ public class Master : MonoBehaviour
     public float timer;
 
     public TextMeshProUGUI numTxt;
+    public TextMeshProUGUI planeTxt;
 
     public bool hasHappened;
 
@@ -28,7 +29,7 @@ public class Master : MonoBehaviour
     public GameObject HmBtn;
     public GameObject WinScreen;
     public bool isPlaying = true;
-    public int planeCount = 0;
+    public int planeCount = 10;
     public int starCount = 3;
     private void Start()
     {
@@ -61,9 +62,10 @@ public class Master : MonoBehaviour
             }
 
             numTxt.SetText(timer.ToString("#0") + " SEC");
+            planeTxt.SetText(planeCount.ToString());
         }
 
-        if (planeCount >= 10)
+        if (planeCount <= 0)
         {
             isPlaying = false;
 
