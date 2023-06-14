@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public AudioSource clickSfx;
     // ints tracking number of stars showing
-    public int starCountLvl1;
+    public List<int> StarsCounter;
     
     
     private void Update()
@@ -61,12 +61,27 @@ public class MainMenu : MonoBehaviour
         //turns on level select screen
         clickSfx.Play();
         // updates level1's stars whenever we go to level select screen
-        if (starCountLvl1 != Singleton.GetInstance.level1Stars)
+        if (StarsCounter[0] != Singleton.GetInstance.level1Stars)
         {
-            starCountLvl1 = Singleton.GetInstance.level1Stars;
-            UpdateStars(Lvl1Stars, starCountLvl1);
+            StarsCounter[0] = Singleton.GetInstance.level1Stars;
+            UpdateStars(Lvl1Stars, StarsCounter[0]);
         }
         //
+        if (StarsCounter[1] != Singleton.GetInstance.level2Stars)
+        {
+            StarsCounter[1] = Singleton.GetInstance.level2Stars;
+            UpdateStars(Lvl2Stars, StarsCounter[1]);
+        }
+        if (StarsCounter[2] != Singleton.GetInstance.level3Stars)
+        {
+            StarsCounter[2] = Singleton.GetInstance.level3Stars;
+            UpdateStars(Lvl3Stars, StarsCounter[2]);
+        }
+        if (StarsCounter[3] != Singleton.GetInstance.level4Stars)
+        {
+            StarsCounter[3] = Singleton.GetInstance.level4Stars;
+            UpdateStars(Lvl4Stars, StarsCounter[3]);
+        }
         Menu.SetActive(false);
         LevelSelect.SetActive(true);
     }

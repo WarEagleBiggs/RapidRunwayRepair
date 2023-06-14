@@ -949,7 +949,7 @@ MonoBehaviour:
   - {fileID: 1577728842}
   - {fileID: 2133373817}
   clickSfx: {fileID: 242966670}
-  starCountLvl1: 0
+  StarsCounter: 00000000000000000000000000000000
 --- !u!82 &242966670
 AudioSource:
   m_ObjectHideFlags: 0
@@ -960,10 +960,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 433f9c260e8b4964988ef5cc712bb376, type: 3}
+  m_audioClip: {fileID: 8300000, guid: edb0a08bae68f2247bfbb1de0382128c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
-  m_Pitch: 2.2
+  m_Volume: 0.5
+  m_Pitch: 1.15
   Loop: 0
   Mute: 0
   Spatialize: 0
