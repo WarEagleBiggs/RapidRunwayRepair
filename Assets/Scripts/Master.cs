@@ -14,6 +14,7 @@ public class Master : MonoBehaviour
 
     public TextMeshProUGUI numTxt;
     public TextMeshProUGUI planeTxt;
+    public TextMeshProUGUI coinTxt;
 
     public bool hasHappened;
 
@@ -32,6 +33,7 @@ public class Master : MonoBehaviour
     public bool isPlaying = true;
     public int planeCount = 10;
     public int starCount = 3;
+    public int coinCount = 25;
     private void Start()
     {
         timer = duration;
@@ -162,5 +164,61 @@ public class Master : MonoBehaviour
     {
         clickSfx.Play();
         MaterialScreen.SetActive(false);
+    }
+
+    // alter to different amounts for different plane types
+    public void addCoin()
+    {
+        coinCount = coinCount + 10;
+        coinTxt.SetText(coinCount.ToString() + " COINS");
+    }
+    // add code to fill crack with material
+    public void soilBtn()
+    {
+        if (coinCount >= 5)
+        {
+            coinCount = coinCount - 5;
+            coinTxt.SetText(coinCount.ToString() + " COINS");
+            clickSfx.Play();
+            MaterialScreen.SetActive(false);
+        }
+    }
+    // add code to fill crack with material
+    public void cementBtn()
+    {
+        if (coinCount >= 10)
+        {
+            coinCount = coinCount - 10;
+            coinTxt.SetText(coinCount.ToString() + " COINS");
+            clickSfx.Play();
+            MaterialScreen.SetActive(false);
+        }
+    }
+    // add code to fill crack with material
+    public void alumBtn()
+    {
+        if (coinCount >= 15)
+        {
+            coinCount = coinCount - 15;
+            coinTxt.SetText(coinCount.ToString() + " COINS");
+            clickSfx.Play();
+            MaterialScreen.SetActive(false);
+        }
+    }
+    // add code to fill crack with material
+    public void steelBtn()
+    {
+        if (coinCount >= 20)
+        {
+            coinCount = coinCount - 20;
+            coinTxt.SetText(coinCount.ToString() + " COINS");
+            clickSfx.Play();
+            MaterialScreen.SetActive(false);
+        }
+    }
+    // button used to test material screen, delete later
+    public void testBtn()
+    {
+        MaterialScreen.SetActive(true);
     }
 }

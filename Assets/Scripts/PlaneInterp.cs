@@ -33,6 +33,11 @@ public class PlaneInterp : MonoBehaviour
             {
                 Destroy(gameObject);
                 master.planeCount--;
+                // alter to different amounts added for plane types
+                if (master.planeCount >= 1)
+                {
+                    master.addCoin();
+                }
             }
         }
 
