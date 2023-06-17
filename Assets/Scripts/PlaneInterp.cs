@@ -15,6 +15,7 @@ public class PlaneInterp : MonoBehaviour
         public Master master;
         private float startTime;
         private float journeyLength;
+        public List<GameObject> CrackBtns;
     
         private void Start()
         {
@@ -31,20 +32,33 @@ public class PlaneInterp : MonoBehaviour
     
             if (fractionOfJourney >= 1f)
             {
-                Destroy(gameObject);
+                
                 master.planeCount--;
-                // alter to different amounts added for plane types
-                if (master.planeCount >= 1)
+                
+                if (master.planeCount >= 1 && master.isPlaying)
                 {
-                    master.addCoin();
+                    if (gameObject.tag == "Light")
+                    {
+                        master.addCoin(10);
+                    }
+                    else if (gameObject.tag == "Medium")
+                    {
+                        master.addCoin(15);
+                    }
+                    else if (gameObject.tag == "Heavy")
+                    {
+                        master.addCoin(20);
+                    }
                 }
+                Destroy(gameObject);
+
             }
         }
 
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.tag == "crack")
+            if (other.tag == "Crack1")
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 if (rend.enabled == true)
@@ -54,6 +68,124 @@ public class PlaneInterp : MonoBehaviour
                 else
                 {
                     rend.enabled = true;
+                    CrackBtns[0].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack2")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[1].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack3")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[2].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack4")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[3].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack5")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[4].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack6")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[5].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack7")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[6].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack8")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[7].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack9")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[8].SetActive(true);
+                }
+            }
+            else if (other.tag == "Crack10")
+            {
+                MeshRenderer rend = other.GetComponent<MeshRenderer>();
+                if (rend.enabled == true)
+                {
+                    master.LoseStar();
+                }
+                else
+                {
+                    rend.enabled = true;
+                    CrackBtns[9].SetActive(true);
                 }
             }
         }

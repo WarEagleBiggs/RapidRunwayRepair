@@ -167,9 +167,9 @@ public class Master : MonoBehaviour
     }
 
     // alter to different amounts for different plane types
-    public void addCoin()
+    public void addCoin(int amount)
     {
-        coinCount = coinCount + 10;
+        coinCount = coinCount + amount;
         coinTxt.SetText(coinCount.ToString() + " COINS");
     }
     // add code to fill crack with material
@@ -216,7 +216,7 @@ public class Master : MonoBehaviour
             MaterialScreen.SetActive(false);
         }
     }
-    // button used to test material screen, delete later
+    // Script used by crack buttons to call material screen
     public void testBtn()
     {
         MaterialScreen.SetActive(true);
