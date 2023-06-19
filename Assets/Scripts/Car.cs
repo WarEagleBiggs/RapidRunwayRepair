@@ -77,7 +77,7 @@ public class Car : MonoBehaviour
             rends[6].enabled = false;
             btns[6].SetActive(false);
             target = home;
-        } else if (other.tag == "8" && targetNum == 7)
+        } else if (other.tag == "Crack8" && targetNum == 7)
         {
             //fix
             Debug.Log("fixed");
