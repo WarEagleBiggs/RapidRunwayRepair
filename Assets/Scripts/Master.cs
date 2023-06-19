@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.AI;
 
 public class Master : MonoBehaviour
 {
@@ -172,11 +173,27 @@ public class Master : MonoBehaviour
         coinCount = coinCount + amount;
         coinTxt.SetText(coinCount.ToString() + " COINS");
     }
+
+
+    public GameObject car;
+
+    public List<GameObject> holes;
+
+    public int currHole;
     // add code to fill crack with material
     public void soilBtn()
     {
         if (coinCount >= 5)
         {
+            //spawn car
+            GameObject carObj = Instantiate(car);
+            carObj.SetActive(true);
+
+            NavMeshAgent agentMan = carObj.GetComponent<NavMeshAgent>();
+            Car carScript = carObj.GetComponent<Car>();
+            carScript.target = holes[currHole];
+            carScript.targetNum = currHole;
+            
             coinCount = coinCount - 5;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
@@ -220,5 +237,6 @@ public class Master : MonoBehaviour
     public void testBtn()
     {
         MaterialScreen.SetActive(true);
+        
     }
 }

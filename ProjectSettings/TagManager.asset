@@ -19,6 +19,7 @@ TagManager:
   - Light
   - Medium
   - Heavy
+  - home
   layers:
   - Default
   - TransparentFX
