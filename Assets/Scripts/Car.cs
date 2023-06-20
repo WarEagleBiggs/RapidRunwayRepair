@@ -9,9 +9,12 @@ public class Car : MonoBehaviour
     public NavMeshAgent agent;
     public GameObject target;
     public List<MeshRenderer> rends;
+    public List<MeshRenderer> rends_Soil;
     public List<GameObject> btns;
     public GameObject home;
     public int targetNum;
+
+    public bool isSoil;
     void Update()
     {
         agent.SetDestination(target.transform.position);
@@ -34,6 +37,10 @@ public class Car : MonoBehaviour
             rends[0].enabled = false;
             btns[0].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[0].enabled = true;
+            }
 
         } else if (other.tag == "Crack2" && targetNum == 1)
         {
@@ -42,6 +49,10 @@ public class Car : MonoBehaviour
             rends[1].enabled = false;
             btns[1].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[1].enabled = true;
+            }
         } else if (other.tag == "Crack3" && targetNum == 2)
         {
             //fix
@@ -49,6 +60,10 @@ public class Car : MonoBehaviour
             rends[2].enabled = false;
             btns[2].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[2].enabled = true;
+            }
         } else if (other.tag == "Crack4" && targetNum == 3)
         {
             //fix
@@ -56,6 +71,10 @@ public class Car : MonoBehaviour
             rends[3].enabled = false;
             btns[3].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[3].enabled = true;
+            }
         } else if (other.tag == "Crack5" && targetNum == 4)
         {
             //fix
@@ -63,6 +82,10 @@ public class Car : MonoBehaviour
             rends[4].enabled = false;
             btns[4].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[4].enabled = true;
+            }
         } else if (other.tag == "Crack6" && targetNum == 5)
         {
             //fix
@@ -70,6 +93,10 @@ public class Car : MonoBehaviour
             rends[5].enabled = false;
             btns[5].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[5].enabled = true;
+            }
         } else if (other.tag == "Crack7" && targetNum == 6)
         {
             //fix
@@ -77,6 +104,10 @@ public class Car : MonoBehaviour
             rends[6].enabled = false;
             btns[6].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[6].enabled = true;
+            }
         } else if (other.tag == "Crack8" && targetNum == 7)
         {
             //fix
@@ -84,6 +115,10 @@ public class Car : MonoBehaviour
             rends[7].enabled = false;
             btns[7].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[7].enabled = true;
+            }
         } else if (other.tag == "Crack9" && targetNum == 8)
         {
             //fix
@@ -91,6 +126,10 @@ public class Car : MonoBehaviour
             rends[8].enabled = false;
             btns[8].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[8].enabled = true;
+            }
         } else if (other.tag == "Crack10" && targetNum == 9)
         {
             //fix
@@ -98,6 +137,10 @@ public class Car : MonoBehaviour
             rends[9].enabled = false;
             btns[9].SetActive(false);
             target = home;
+            if (isSoil)
+            {
+                rends_Soil[9].enabled = true;
+            }
         }
     }
 }

@@ -7731,6 +7731,17 @@ MonoBehaviour:
   - {fileID: 1052707491}
   - {fileID: 439080271}
   - {fileID: 1706777301}
+  rends_Soil:
+  - {fileID: 1185556449}
+  - {fileID: 1450348738}
+  - {fileID: 1212132189}
+  - {fileID: 2038340826}
+  - {fileID: 23209309}
+  - {fileID: 1704950150}
+  - {fileID: 699598973}
+  - {fileID: 84913519}
+  - {fileID: 1184121270}
+  - {fileID: 1585597534}
   btns:
   - {fileID: 2140256165}
   - {fileID: 778857583}
@@ -7744,6 +7755,7 @@ MonoBehaviour:
   - {fileID: 866906745}
   home: {fileID: 567041484}
   targetNum: 0
+  isSoil: 1
 --- !u!4 &1393953972
 Transform:
   m_ObjectHideFlags: 0
