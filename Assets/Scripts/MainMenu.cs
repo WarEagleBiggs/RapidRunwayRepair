@@ -9,6 +9,13 @@ public class MainMenu : MonoBehaviour
     public GameObject LevelSelect;
     public GameObject Menu;
     public GameObject Tutorial;
+
+    public GameObject Materials;
+    public GameObject SoilInfo;
+    public GameObject CementInfo;
+    public GameObject AlumInfo;
+    public GameObject SteelInfo;
+    
     // bools controlling level locks
     public bool isLvl2Unlocked;
     public bool isLvl3Unlocked;
@@ -54,6 +61,7 @@ public class MainMenu : MonoBehaviour
         clickSfx.Play();
         LevelSelect.SetActive(false);
         Tutorial.SetActive(false);
+        Materials.SetActive(false);
         Menu.SetActive(true);
     }
     public void ToLevelSelect()
@@ -91,6 +99,41 @@ public class MainMenu : MonoBehaviour
         clickSfx.Play();
         Menu.SetActive(false);
         Tutorial.SetActive(true);
+    }
+
+    public void ToMaterials()
+    {
+        clickSfx.Play();
+        SoilInfo.SetActive(false);
+        CementInfo.SetActive(false);
+        AlumInfo.SetActive(false);
+        SteelInfo.SetActive(false);
+        Materials.SetActive(true);
+    }
+
+    public void ToSoil()
+    {
+        clickSfx.Play();
+        Materials.SetActive(false);
+        SoilInfo.SetActive(true);
+    }
+    public void ToCement()
+    {
+        clickSfx.Play();
+        Materials.SetActive(false);
+        CementInfo.SetActive(true);
+    }
+    public void ToAlum()
+    {
+        clickSfx.Play();
+        Materials.SetActive(false);
+        AlumInfo.SetActive(true);
+    }
+    public void ToSteel()
+    {
+        clickSfx.Play();
+        Materials.SetActive(false);
+        SteelInfo.SetActive(true);
     }
 
     public void ToLevel1()
