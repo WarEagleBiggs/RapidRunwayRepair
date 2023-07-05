@@ -31,6 +31,7 @@ public class Master : MonoBehaviour
     public GameObject HmBtn;
     public GameObject WinScreen;
     public GameObject MaterialScreen;
+    public GameObject CrackBtns;
     public bool isPlaying = true;
     public int planeCount = 10;
     public int starCount = 3;
@@ -148,6 +149,7 @@ public class Master : MonoBehaviour
             GrayStars[0].SetActive(true);
             isStar1Alive = false;
             isPlaying = false;
+            CrackBtns.SetActive(false);
             FailScreen.SetActive(true);
             HmBtn.SetActive(false);
         }

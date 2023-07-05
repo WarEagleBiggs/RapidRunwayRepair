@@ -108,6 +108,7 @@ public class MainMenu : MonoBehaviour
         CementInfo.SetActive(false);
         AlumInfo.SetActive(false);
         SteelInfo.SetActive(false);
+        Menu.SetActive(false);
         Materials.SetActive(true);
     }
 
