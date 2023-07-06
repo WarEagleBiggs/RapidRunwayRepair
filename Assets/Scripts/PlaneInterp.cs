@@ -18,7 +18,7 @@ public class PlaneInterp : MonoBehaviour
         private float startTime;
         private float journeyLength;
         public List<GameObject> CrackBtns;
-        public List<ParticleSystem> Booms;
+        public MoveEm MoveEmScript;
     
         private void Start()
         {
@@ -71,7 +71,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[0].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -89,7 +89,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[1].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -108,7 +108,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[2].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -127,7 +127,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[3].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -146,7 +146,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[4].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -165,7 +165,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[5].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -184,7 +184,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[6].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -203,7 +203,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[7].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -222,7 +222,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[8].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -241,7 +241,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
-                    Booms[9].Play();
+                    MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
