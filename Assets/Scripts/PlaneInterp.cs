@@ -18,6 +18,7 @@ public class PlaneInterp : MonoBehaviour
         private float startTime;
         private float journeyLength;
         public List<GameObject> CrackBtns;
+        public List<ParticleSystem> Booms;
     
         private void Start()
         {
@@ -70,6 +71,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[0].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -87,6 +89,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[1].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -105,6 +108,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[2].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -123,6 +127,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[3].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -141,6 +146,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[4].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -159,6 +165,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[5].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -177,6 +184,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[6].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -195,6 +203,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[7].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -213,6 +222,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[8].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
@@ -231,6 +241,7 @@ public class PlaneInterp : MonoBehaviour
                 if (rend.enabled == true)
                 {
                     master.LoseStar();
+                    Booms[9].Play();
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
