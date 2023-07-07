@@ -15,6 +15,7 @@ public class PlaneInterp : MonoBehaviour
         public bool medium;
         public bool heavy;
         public Master master;
+        public Car car;
         private float startTime;
         private float journeyLength;
         public MoveEm MoveEmScript;
@@ -75,6 +76,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
+                    car.rends_Soil[0].enabled = false;
+                    car.rends_Cem[0].enabled = false;
+                    car.rends_Alum[0].enabled = false;
+                    car.rends_Stl[0].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[0].SetActive(true);
                     //master.currHole = 0;
@@ -93,7 +98,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                    
+                    car.rends_Soil[1].enabled = false;
+                    car.rends_Cem[1].enabled = false;
+                    car.rends_Alum[1].enabled = false;
+                    car.rends_Stl[1].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[1].SetActive(true);
                     //master.currHole = 1;
@@ -112,7 +120,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                    
+                    car.rends_Soil[2].enabled = false;
+                    car.rends_Cem[2].enabled = false;
+                    car.rends_Alum[2].enabled = false;
+                    car.rends_Stl[2].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[2].SetActive(true);
                    // master.currHole = 2;
@@ -131,7 +142,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                   
+                    car.rends_Soil[3].enabled = false;
+                    car.rends_Cem[3].enabled = false;
+                    car.rends_Alum[3].enabled = false;
+                    car.rends_Stl[3].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[3].SetActive(true);
                     //master.currHole = 3;
@@ -150,7 +164,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                    
+                    car.rends_Soil[4].enabled = false;
+                    car.rends_Cem[4].enabled = false;
+                    car.rends_Alum[4].enabled = false;
+                    car.rends_Stl[4].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[4].SetActive(true);
                     //master.currHole = 4;
@@ -169,7 +186,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                    
+                    car.rends_Soil[5].enabled = false;
+                    car.rends_Cem[5].enabled = false;
+                    car.rends_Alum[5].enabled = false;
+                    car.rends_Stl[5].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[5].SetActive(true);
                     //master.currHole = 5;
@@ -188,7 +208,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                    
+                    car.rends_Soil[6].enabled = false;
+                    car.rends_Cem[6].enabled = false;
+                    car.rends_Alum[6].enabled = false;
+                    car.rends_Stl[6].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[6].SetActive(true);
                     //master.currHole = 6;
@@ -207,7 +230,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                    
+                    car.rends_Soil[7].enabled = false;
+                    car.rends_Cem[7].enabled = false;
+                    car.rends_Alum[7].enabled = false;
+                    car.rends_Stl[7].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[7].SetActive(true);
                    // master.currHole = 7;
@@ -226,7 +252,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                    
+                    car.rends_Soil[8].enabled = false;
+                    car.rends_Cem[8].enabled = false;
+                    car.rends_Alum[8].enabled = false;
+                    car.rends_Stl[8].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[8].SetActive(true);
                    // master.currHole = 8;
@@ -245,7 +274,10 @@ public class PlaneInterp : MonoBehaviour
                 }
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
-                    
+                    car.rends_Soil[9].enabled = false;
+                    car.rends_Cem[9].enabled = false;
+                    car.rends_Alum[9].enabled = false;
+                    car.rends_Stl[9].enabled = false;
                     rend.enabled = true;
                     master.IndiCrckBtns[9].SetActive(true);
                    // master.currHole = 9;

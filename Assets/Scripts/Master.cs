@@ -181,6 +181,10 @@ public class Master : MonoBehaviour
     public GameObject car;
 
     public List<GameObject> holes;
+    public bool isSoil = false;
+    public bool isCem = false;
+    public bool isAlum = false;
+    public bool isStl = false;
 
     public int currHole = -1;
     // add code to fill crack with material
@@ -203,6 +207,7 @@ public class Master : MonoBehaviour
             IndiCrckBtns[currHole].SetActive(false);
             currHole = -1;
             MaterialScreen.SetActive(false);
+            isSoil = true;
         }
     }
     // add code to fill crack with material
@@ -210,10 +215,18 @@ public class Master : MonoBehaviour
     {
         if (coinCount >= 10)
         {
+            GameObject carObj = Instantiate(car);
+            carObj.SetActive(true);
+
+            NavMeshAgent agentMan = carObj.GetComponent<NavMeshAgent>();
+            Car carScript = carObj.GetComponent<Car>();
+            carScript.target = holes[currHole];
+            carScript.targetNum = currHole;
             coinCount = coinCount - 10;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
             MaterialScreen.SetActive(false);
+            isCem = true;
         }
     }
     // add code to fill crack with material
@@ -221,10 +234,18 @@ public class Master : MonoBehaviour
     {
         if (coinCount >= 15)
         {
+            GameObject carObj = Instantiate(car);
+            carObj.SetActive(true);
+
+            NavMeshAgent agentMan = carObj.GetComponent<NavMeshAgent>();
+            Car carScript = carObj.GetComponent<Car>();
+            carScript.target = holes[currHole];
+            carScript.targetNum = currHole;
             coinCount = coinCount - 15;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
             MaterialScreen.SetActive(false);
+            isAlum = true;
         }
     }
     // add code to fill crack with material
@@ -232,12 +253,22 @@ public class Master : MonoBehaviour
     {
         if (coinCount >= 20)
         {
+            GameObject carObj = Instantiate(car);
+            carObj.SetActive(true);
+
+            NavMeshAgent agentMan = carObj.GetComponent<NavMeshAgent>();
+            Car carScript = carObj.GetComponent<Car>();
+            carScript.target = holes[currHole];
+            carScript.targetNum = currHole;
             coinCount = coinCount - 20;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
             MaterialScreen.SetActive(false);
+            isStl = true;
         }
     }
+    
+    
 
     public void Crck0Btn()
     {
