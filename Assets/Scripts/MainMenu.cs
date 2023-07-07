@@ -9,12 +9,16 @@ public class MainMenu : MonoBehaviour
     public GameObject LevelSelect;
     public GameObject Menu;
     public GameObject Tutorial;
+    public GameObject Tut1;
+    public GameObject Tut2;
+
 
     public GameObject Materials;
     public GameObject SoilInfo;
     public GameObject CementInfo;
     public GameObject AlumInfo;
     public GameObject SteelInfo;
+    
     
     // bools controlling level locks
     public bool isLvl2Unlocked;
@@ -99,7 +103,22 @@ public class MainMenu : MonoBehaviour
         clickSfx.Play();
         Menu.SetActive(false);
         Tutorial.SetActive(true);
+        Tut1.SetActive(true);
+        Tut2.SetActive(false);
     }
+
+    public void Tut1Next()
+    {
+        Tut1.SetActive(false);
+        Tut2.SetActive(true);
+    }
+
+    public void Tut2Prev()
+    {
+        Tut2.SetActive(false);
+        Tut1.SetActive(true);
+    }
+    
 
     public void ToMaterials()
     {
