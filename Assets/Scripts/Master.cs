@@ -32,6 +32,7 @@ public class Master : MonoBehaviour
     public GameObject WinScreen;
     public GameObject MaterialScreen;
     public GameObject CrackBtns;
+    public List<GameObject> IndiCrckBtns;
     public bool isPlaying = true;
     public int planeCount = 10;
     public int starCount = 3;
@@ -181,7 +182,7 @@ public class Master : MonoBehaviour
 
     public List<GameObject> holes;
 
-    public int currHole;
+    public int currHole = -1;
     // add code to fill crack with material
     public void soilBtn()
     {
@@ -199,6 +200,8 @@ public class Master : MonoBehaviour
             coinCount = coinCount - 5;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
+            IndiCrckBtns[currHole].SetActive(false);
+            currHole = -1;
             MaterialScreen.SetActive(false);
         }
     }
@@ -235,10 +238,55 @@ public class Master : MonoBehaviour
             MaterialScreen.SetActive(false);
         }
     }
-    // Script used by crack buttons to call material screen
-    public void testBtn()
+
+    public void Crck0Btn()
     {
         MaterialScreen.SetActive(true);
-        
+        currHole = 0;
+    }
+    public void Crck1Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 1;
+    }
+    public void Crck2Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 2;
+    }
+    public void Crck3Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 3;
+    }
+    public void Crck4Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 4;
+    }
+    public void Crck5Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 5;
+    }
+    public void Crck6Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 6;
+    }
+    public void Crck7Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 7;
+    }
+    public void Crck8Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 8;
+    }
+    public void Crck9Btn()
+    {
+        MaterialScreen.SetActive(true);
+        currHole = 9;
     }
 }

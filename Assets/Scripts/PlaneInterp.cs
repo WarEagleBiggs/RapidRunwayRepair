@@ -17,7 +17,6 @@ public class PlaneInterp : MonoBehaviour
         public Master master;
         private float startTime;
         private float journeyLength;
-        public List<GameObject> CrackBtns;
         public MoveEm MoveEmScript;
     
         private void Start()
@@ -77,8 +76,8 @@ public class PlaneInterp : MonoBehaviour
                 else if(numOfHoles > 0 && randoNum == 1)
                 {
                     rend.enabled = true;
-                    CrackBtns[0].SetActive(true);
-                    master.currHole = 0;
+                    master.IndiCrckBtns[0].SetActive(true);
+                    //master.currHole = 0;
                     numOfHoles--;
                 }
             }
@@ -96,8 +95,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                     
                     rend.enabled = true;
-                    CrackBtns[1].SetActive(true);
-                    master.currHole = 1;
+                    master.IndiCrckBtns[1].SetActive(true);
+                    //master.currHole = 1;
                     numOfHoles--;
                 }
             }
@@ -115,8 +114,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                     
                     rend.enabled = true;
-                    CrackBtns[2].SetActive(true);
-                    master.currHole = 2;
+                    master.IndiCrckBtns[2].SetActive(true);
+                   // master.currHole = 2;
                     numOfHoles--;
                 }
             }
@@ -134,8 +133,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                    
                     rend.enabled = true;
-                    CrackBtns[3].SetActive(true);
-                    master.currHole = 3;
+                    master.IndiCrckBtns[3].SetActive(true);
+                    //master.currHole = 3;
                     numOfHoles--;
                 }
             }
@@ -153,8 +152,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                     
                     rend.enabled = true;
-                    CrackBtns[4].SetActive(true);
-                    master.currHole = 4;
+                    master.IndiCrckBtns[4].SetActive(true);
+                    //master.currHole = 4;
                     numOfHoles--;
                 }
             }
@@ -172,8 +171,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                     
                     rend.enabled = true;
-                    CrackBtns[5].SetActive(true);
-                    master.currHole = 5;
+                    master.IndiCrckBtns[5].SetActive(true);
+                    //master.currHole = 5;
                     numOfHoles--;
                 }
             }
@@ -191,8 +190,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                     
                     rend.enabled = true;
-                    CrackBtns[6].SetActive(true);
-                    master.currHole = 6;
+                    master.IndiCrckBtns[6].SetActive(true);
+                    //master.currHole = 6;
                     numOfHoles--;
                 }
             }
@@ -210,8 +209,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                     
                     rend.enabled = true;
-                    CrackBtns[7].SetActive(true);
-                    master.currHole = 7;
+                    master.IndiCrckBtns[7].SetActive(true);
+                   // master.currHole = 7;
                     numOfHoles--;
                 }
             }
@@ -229,8 +228,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                     
                     rend.enabled = true;
-                    CrackBtns[8].SetActive(true);
-                    master.currHole = 8;
+                    master.IndiCrckBtns[8].SetActive(true);
+                   // master.currHole = 8;
                     numOfHoles--;
                 }
             }
@@ -248,8 +247,8 @@ public class PlaneInterp : MonoBehaviour
                 {
                     
                     rend.enabled = true;
-                    CrackBtns[9].SetActive(true);
-                    master.currHole = 9;
+                    master.IndiCrckBtns[9].SetActive(true);
+                   // master.currHole = 9;
                     numOfHoles--;
                 }
             }

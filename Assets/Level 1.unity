@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1840,7 +1840,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck7Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2092,6 +2092,17 @@ MonoBehaviour:
   WinScreen: {fileID: 1303372349}
   MaterialScreen: {fileID: 811149846}
   CrackBtns: {fileID: 1363923386}
+  IndiCrckBtns:
+  - {fileID: 2140256165}
+  - {fileID: 778857583}
+  - {fileID: 1677265726}
+  - {fileID: 1874403998}
+  - {fileID: 796908149}
+  - {fileID: 1862556573}
+  - {fileID: 1624084543}
+  - {fileID: 211391471}
+  - {fileID: 1455607615}
+  - {fileID: 866906745}
   isPlaying: 1
   planeCount: 10
   starCount: 3
@@ -5394,7 +5405,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck1Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5655,7 +5666,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck4Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6303,7 +6314,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck9Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10256,7 +10267,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck8Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10836,7 +10847,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck6Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11187,7 +11198,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck2Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12441,7 +12452,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck5Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12574,7 +12585,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck3Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14464,7 +14475,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 247302658}
         m_TargetAssemblyTypeName: Master, Assembly-CSharp
-        m_MethodName: testBtn
+        m_MethodName: Crck0Btn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15508,17 +15519,6 @@ MonoBehaviour:
   medium: 0
   heavy: 0
   master: {fileID: 247302658}
-  CrackBtns:
-  - {fileID: 2140256165}
-  - {fileID: 778857583}
-  - {fileID: 1677265726}
-  - {fileID: 1874403998}
-  - {fileID: 796908149}
-  - {fileID: 1862556573}
-  - {fileID: 1624084543}
-  - {fileID: 211391471}
-  - {fileID: 1455607615}
-  - {fileID: 866906745}
   MoveEmScript: {fileID: 0}
 --- !u!1 &919132149304855624
 GameObject:
@@ -17241,17 +17241,6 @@ MonoBehaviour:
   medium: 1
   heavy: 0
   master: {fileID: 247302658}
-  CrackBtns:
-  - {fileID: 2140256165}
-  - {fileID: 778857583}
-  - {fileID: 1677265726}
-  - {fileID: 1874403998}
-  - {fileID: 796908149}
-  - {fileID: 1862556573}
-  - {fileID: 1624084543}
-  - {fileID: 211391471}
-  - {fileID: 1455607615}
-  - {fileID: 866906745}
   MoveEmScript: {fileID: 1957997998}
 --- !u!54 &2918908122470974234
 Rigidbody:
@@ -17615,17 +17604,6 @@ MonoBehaviour:
   medium: 0
   heavy: 1
   master: {fileID: 247302658}
-  CrackBtns:
-  - {fileID: 2140256165}
-  - {fileID: 778857583}
-  - {fileID: 1677265726}
-  - {fileID: 1874403998}
-  - {fileID: 796908149}
-  - {fileID: 1862556573}
-  - {fileID: 1624084543}
-  - {fileID: 211391471}
-  - {fileID: 1455607615}
-  - {fileID: 866906745}
   MoveEmScript: {fileID: 0}
 --- !u!33 &3469287837340948823
 MeshFilter:
