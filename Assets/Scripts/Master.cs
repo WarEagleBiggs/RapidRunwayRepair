@@ -37,6 +37,7 @@ public class Master : MonoBehaviour
     public int planeCount = 10;
     public int starCount = 3;
     public int coinCount = 25;
+    public List<int> crackMtrl;
     private void Start()
     {
         timer = duration;
@@ -200,7 +201,7 @@ public class Master : MonoBehaviour
             Car carScript = carObj.GetComponent<Car>();
             carScript.target = holes[currHole];
             carScript.targetNum = currHole;
-            
+            crackMtrl[currHole] = 1;
             coinCount = coinCount - 5;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
@@ -222,6 +223,8 @@ public class Master : MonoBehaviour
             Car carScript = carObj.GetComponent<Car>();
             carScript.target = holes[currHole];
             carScript.targetNum = currHole;
+            crackMtrl[currHole] = 2;
+
             coinCount = coinCount - 10;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
@@ -241,6 +244,8 @@ public class Master : MonoBehaviour
             Car carScript = carObj.GetComponent<Car>();
             carScript.target = holes[currHole];
             carScript.targetNum = currHole;
+            crackMtrl[currHole] = 3;
+
             coinCount = coinCount - 15;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
@@ -260,6 +265,8 @@ public class Master : MonoBehaviour
             Car carScript = carObj.GetComponent<Car>();
             carScript.target = holes[currHole];
             carScript.targetNum = currHole;
+            crackMtrl[currHole] = 4;
+
             coinCount = coinCount - 20;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();

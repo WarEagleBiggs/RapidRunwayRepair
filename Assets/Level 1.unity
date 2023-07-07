@@ -2107,6 +2107,7 @@ MonoBehaviour:
   planeCount: 10
   starCount: 3
   coinCount: 25
+  crackMtrl: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   objectToInstantiate: {fileID: 2918908122470974231}
   car: {fileID: 1393953969}
   holes:
