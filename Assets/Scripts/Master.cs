@@ -8,36 +8,42 @@ using UnityEngine.Audio;
 using UnityEngine.AI;
 
 public class Master : MonoBehaviour
-{
+{   // VARIABLES //
+    // active status
+    public bool isPlaying = true;
+    // plane timing
     public float duration;
-
     public float timer;
-
+    public bool hasHappened;
+    // Screen Text
     public TextMeshProUGUI numTxt;
     public TextMeshProUGUI planeTxt;
     public TextMeshProUGUI coinTxt;
-
-    public bool hasHappened;
-
+    // List of planes (unused)
     public List<GameObject> planeList;
-
+    // Click audio
     public AudioSource clickSfx;
+    // Star variables
     public bool isStar1Alive = true;
     public bool isStar2Alive = true;
     public bool isStar3Alive = true;
     public List<GameObject> Stars;
     public List<GameObject> GrayStars;
+    // Screens and buttons to turn on and off
     public GameObject FailScreen;
     public GameObject HmBtn;
     public GameObject WinScreen;
     public GameObject MaterialScreen;
     public GameObject CrackBtns;
     public List<GameObject> IndiCrckBtns;
-    public bool isPlaying = true;
+    // Game starting values
     public int planeCount = 10;
     public int starCount = 3;
     public int coinCount = 25;
+    // keeps track of material chosen to fill crack
     public List<int> crackMtrl;
+    
+    
     private void Start()
     {
         timer = duration;
@@ -71,7 +77,7 @@ public class Master : MonoBehaviour
             numTxt.SetText(timer.ToString("#0") + " SEC");
             planeTxt.SetText(planeCount.ToString());
         }
-
+        // End of game success conditions
         if (planeCount <= 0)
         {
             isPlaying = false;
@@ -92,19 +98,18 @@ public class Master : MonoBehaviour
             }
         }
     }
-
-
-
-    public GameObject objectToInstantiate;  
-
+    
+    // spawns plane
+    public GameObject objectToInstantiate;
     public void Spawn()
     {
-        
         GameObject obj = Instantiate(objectToInstantiate);
         obj.SetActive(true);
         
     }
 
+    
+    // Functions for screen buttons
     public void Skip()
     {
         if (isPlaying)
@@ -123,13 +128,25 @@ public class Master : MonoBehaviour
         }
 
     }
-
     public void HomeBtn()
     {    
         clickSfx.Play();
         SceneManager.LoadScene("Menu");
         
     }
+    public void Replay()
+    {
+        clickSfx.Play();
+        SceneManager.LoadScene(1);
+    }
+    public void CloseMaterial()
+    {
+        clickSfx.Play();
+        MaterialScreen.SetActive(false);
+    }
+    
+    
+    // Actions when plane crashes
     public void LoseStar()
     {
         starCount--;
@@ -147,6 +164,7 @@ public class Master : MonoBehaviour
         }
         else
         {
+            // Game fail conditions
             Stars[0].SetActive(false);
             GrayStars[0].SetActive(true);
             isStar1Alive = false;
@@ -158,20 +176,9 @@ public class Master : MonoBehaviour
 
     }
     
-
-    public void Replay()
-    {
-        clickSfx.Play();
-        SceneManager.LoadScene(1);
-    }
-
-    public void CloseMaterial()
-    {
-        clickSfx.Play();
-        MaterialScreen.SetActive(false);
-    }
-
-    // alter to different amounts for different plane types
+    
+    // Adds coins when plane hits end of runway
+    //  *alter to different amounts for different plane types
     public void addCoin(int amount)
     {
         coinCount = coinCount + amount;
@@ -179,6 +186,9 @@ public class Master : MonoBehaviour
     }
 
 
+    
+    // Functions for Material buttons
+    // - subtracts coins, sends car to crack, sets crack's chosen material, turns off material screen
     public GameObject car;
 
     public List<GameObject> holes;
@@ -209,7 +219,7 @@ public class Master : MonoBehaviour
             
         }
     }
-    // add code to fill crack with material
+    
     public void cementBtn()
     {
         if (coinCount >= 10)
@@ -231,7 +241,7 @@ public class Master : MonoBehaviour
             
         }
     }
-    // add code to fill crack with material
+    
     public void alumBtn()
     {
         if (coinCount >= 15)
@@ -252,7 +262,6 @@ public class Master : MonoBehaviour
             MaterialScreen.SetActive(false);
         }
     }
-    // add code to fill crack with material
     public void steelBtn()
     {
         if (coinCount >= 20)
@@ -275,7 +284,9 @@ public class Master : MonoBehaviour
     }
     
     
-
+    
+    // Functions for each crack button
+    //   -has currHole remember which crack called material screen
     public void Crck0Btn()
     {
         MaterialScreen.SetActive(true);

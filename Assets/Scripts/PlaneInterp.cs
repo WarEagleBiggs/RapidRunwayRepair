@@ -30,6 +30,7 @@ public class PlaneInterp : MonoBehaviour
         private float journeyLength;
         public MoveEm MoveEmScript;
     
+        // Plane programming
         private void Start()
         {
             startTime = Time.time;
@@ -69,7 +70,7 @@ public class PlaneInterp : MonoBehaviour
         }
 
 
-
+        // Crack rendering and plane destruction
         private void OnTriggerEnter(Collider other)
         {
             if (other.tag == "Crack1")
@@ -85,7 +86,7 @@ public class PlaneInterp : MonoBehaviour
                     Destroy(this.gameObject);
                 }
                 else if(numOfHoles > 0 && randoNum == 1 && crack0.starter == 1)
-                {
+                {  
                     car.rends_Soil[0].enabled = false;
                     car.rends_Cem[0].enabled = false;
                     car.rends_Alum[0].enabled = false;

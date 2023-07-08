@@ -55,6 +55,7 @@ public class Car : MonoBehaviour
             if (master.crackMtrl[0] == 1)
             {
                 rends_Soil[0].enabled = true;
+                // Function calls that updates the spot's hit points
                 crack0.addSoil();
             }
             else if (master.crackMtrl[0] == 2)
@@ -73,7 +74,7 @@ public class Car : MonoBehaviour
                 rends_Stl[0].enabled = true;
                 crack0.addStl();
             }
-
+            // resets selection value
             master.crackMtrl[0] = 0;
         } else if (other.tag == "Crack2" && targetNum == 1)
         {
