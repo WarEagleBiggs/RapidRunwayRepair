@@ -2121,10 +2121,6 @@ MonoBehaviour:
   - {fileID: 1052707488}
   - {fileID: 439080268}
   - {fileID: 1706777298}
-  isSoil: 0
-  isCem: 0
-  isAlum: 0
-  isStl: 0
   currHole: 0
 --- !u!82 &247302659
 AudioSource:
@@ -2310,6 +2306,7 @@ GameObject:
   - component: {fileID: 303774367}
   - component: {fileID: 303774366}
   - component: {fileID: 303774368}
+  - component: {fileID: 303774369}
   m_Layer: 0
   m_Name: Crack (1)
   m_TagString: Crack2
@@ -2395,6 +2392,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.014390713, z: 0.09}
   m_Center: {x: 0, y: 0.000046683486, z: 0.00014402518}
+--- !u!114 &303774369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303774364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211d24b4bf2dace4c92850d787f8121a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  starter: 1
+  rend: {fileID: 303774366}
+  soil: {fileID: 1450348738}
+  cement: {fileID: 814764791}
+  alum: {fileID: 1047028180}
+  steel: {fileID: 61034695}
+  button: {fileID: 778857583}
 --- !u!1 &317651670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4003,6 +4021,7 @@ GameObject:
   - component: {fileID: 439080272}
   - component: {fileID: 439080271}
   - component: {fileID: 439080270}
+  - component: {fileID: 439080273}
   m_Layer: 0
   m_Name: Crack (8)
   m_TagString: Crack9
@@ -4088,6 +4107,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439080268}
   m_Mesh: {fileID: -462981019419857548, guid: 1d4aa16091cfc0f4b9d8f654e8705e10, type: 3}
+--- !u!114 &439080273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439080268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c621f951a8585468b3060c3ddfbd5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  rend: {fileID: 439080271}
+  soil: {fileID: 1184121270}
+  cement: {fileID: 1651960196}
+  alum: {fileID: 2103711175}
+  steel: {fileID: 939998801}
+  button: {fileID: 1455607615}
+  starter: 1
 --- !u!1 &535396597
 GameObject:
   m_ObjectHideFlags: 0
@@ -5126,6 +5166,7 @@ GameObject:
   - component: {fileID: 747119790}
   - component: {fileID: 747119789}
   - component: {fileID: 747119791}
+  - component: {fileID: 747119792}
   m_Layer: 0
   m_Name: Crack (2)
   m_TagString: Crack3
@@ -5211,6 +5252,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.014390713, z: 0.09}
   m_Center: {x: 0, y: 0.000046683486, z: 0.00014402518}
+--- !u!114 &747119792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747119787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f01a83262423143926c8fd58ca96cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  rend: {fileID: 747119789}
+  soil: {fileID: 1212132189}
+  cement: {fileID: 674690838}
+  alum: {fileID: 1255170898}
+  steel: {fileID: 177691958}
+  button: {fileID: 1677265726}
+  starter: 1
 --- !u!1 &767396185
 GameObject:
   m_ObjectHideFlags: 0
@@ -6845,6 +6907,7 @@ GameObject:
   - component: {fileID: 983105019}
   - component: {fileID: 983105018}
   - component: {fileID: 983105020}
+  - component: {fileID: 983105021}
   m_Layer: 0
   m_Name: Crack (4)
   m_TagString: Crack5
@@ -6930,6 +6993,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.014390713, z: 0.09}
   m_Center: {x: 0, y: 0.000046682555, z: 0.00014402506}
+--- !u!114 &983105021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983105016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4edfc47782c63184ebeab0b243f72e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  rend: {fileID: 983105018}
+  soil: {fileID: 23209309}
+  cement: {fileID: 57024325}
+  alum: {fileID: 144953923}
+  steel: {fileID: 29725343}
+  button: {fileID: 796908149}
+  starter: 1
 --- !u!1 &1010541679
 GameObject:
   m_ObjectHideFlags: 0
@@ -7101,6 +7185,7 @@ GameObject:
   - component: {fileID: 1052707492}
   - component: {fileID: 1052707491}
   - component: {fileID: 1052707490}
+  - component: {fileID: 1052707493}
   m_Layer: 0
   m_Name: Crack (7)
   m_TagString: Crack8
@@ -7186,6 +7271,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052707488}
   m_Mesh: {fileID: -462981019419857548, guid: 1d4aa16091cfc0f4b9d8f654e8705e10, type: 3}
+--- !u!114 &1052707493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052707488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca7b19f2eacb734fa91e2e8e3598d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  rend: {fileID: 1052707491}
+  soil: {fileID: 84913519}
+  cement: {fileID: 103709398}
+  alum: {fileID: 1740234824}
+  steel: {fileID: 1308360450}
+  button: {fileID: 211391471}
+  starter: 1
 --- !u!1 &1057039457
 GameObject:
   m_ObjectHideFlags: 0
@@ -9626,6 +9732,16 @@ MonoBehaviour:
   home: {fileID: 567041484}
   targetNum: 0
   master: {fileID: 247302658}
+  crack0: {fileID: 3469287837340948825}
+  crack1: {fileID: 303774369}
+  crack2: {fileID: 747119792}
+  crack3: {fileID: 2024776446}
+  crack4: {fileID: 983105021}
+  crack5: {fileID: 1402840581}
+  crack6: {fileID: 1643293405}
+  crack7: {fileID: 1052707493}
+  crack8: {fileID: 439080273}
+  crack9: {fileID: 1706777303}
   isSoil: 1
 --- !u!4 &1393953972
 Transform:
@@ -9684,6 +9800,7 @@ GameObject:
   - component: {fileID: 1402840579}
   - component: {fileID: 1402840578}
   - component: {fileID: 1402840580}
+  - component: {fileID: 1402840581}
   m_Layer: 0
   m_Name: Crack (5)
   m_TagString: Crack6
@@ -9769,6 +9886,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.014390713, z: 0.09}
   m_Center: {x: 0, y: 0.000046683486, z: 0.00014402506}
+--- !u!114 &1402840581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402840576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559cef05c4299a740bcc6fdbe075c5e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  rend: {fileID: 1402840578}
+  soil: {fileID: 1704950150}
+  cement: {fileID: 1443485435}
+  alum: {fileID: 1429487393}
+  steel: {fileID: 11612548}
+  button: {fileID: 1862556573}
+  starter: 1
 --- !u!1 &1418984380
 GameObject:
   m_ObjectHideFlags: 0
@@ -24554,6 +24692,7 @@ GameObject:
   - component: {fileID: 1643293404}
   - component: {fileID: 1643293403}
   - component: {fileID: 1643293402}
+  - component: {fileID: 1643293405}
   m_Layer: 0
   m_Name: Crack (6)
   m_TagString: Crack7
@@ -24639,6 +24778,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643293400}
   m_Mesh: {fileID: -462981019419857548, guid: 1d4aa16091cfc0f4b9d8f654e8705e10, type: 3}
+--- !u!114 &1643293405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643293400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935aa6227ce6c1649b7a4be0de0cb82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  rend: {fileID: 1643293403}
+  soil: {fileID: 699598973}
+  cement: {fileID: 796802993}
+  alum: {fileID: 1822479682}
+  steel: {fileID: 826610689}
+  button: {fileID: 1624084543}
+  starter: 1
 --- !u!1 &1651960194
 GameObject:
   m_ObjectHideFlags: 0
@@ -25202,6 +25362,7 @@ GameObject:
   - component: {fileID: 1706777302}
   - component: {fileID: 1706777301}
   - component: {fileID: 1706777300}
+  - component: {fileID: 1706777303}
   m_Layer: 0
   m_Name: Crack (9)
   m_TagString: Crack10
@@ -25287,6 +25448,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706777298}
   m_Mesh: {fileID: -462981019419857548, guid: 1d4aa16091cfc0f4b9d8f654e8705e10, type: 3}
+--- !u!114 &1706777303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706777298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f37c319fa49cf842822f053f1c8c2ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  rend: {fileID: 1706777301}
+  soil: {fileID: 1585597534}
+  cement: {fileID: 953690829}
+  alum: {fileID: 2000278163}
+  steel: {fileID: 2001260966}
+  button: {fileID: 866906745}
+  starter: 1
 --- !u!1 &1714358567
 GameObject:
   m_ObjectHideFlags: 0
@@ -27544,6 +27726,7 @@ GameObject:
   - component: {fileID: 2024776444}
   - component: {fileID: 2024776443}
   - component: {fileID: 2024776445}
+  - component: {fileID: 2024776446}
   m_Layer: 0
   m_Name: Crack (3)
   m_TagString: Crack4
@@ -27629,6 +27812,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.014390713, z: 0.09}
   m_Center: {x: 0, y: 0.000046684418, z: 0.00014402518}
+--- !u!114 &2024776446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024776441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babd7c180c4c32b44a9a2dfdcf463738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  rend: {fileID: 2024776443}
+  soil: {fileID: 2038340826}
+  cement: {fileID: 1995128099}
+  alum: {fileID: 540059845}
+  steel: {fileID: 332688988}
+  button: {fileID: 1874403998}
+  starter: 1
 --- !u!1 &2026565970
 GameObject:
   m_ObjectHideFlags: 0
@@ -29167,6 +29371,16 @@ MonoBehaviour:
   heavy: 0
   master: {fileID: 247302658}
   car: {fileID: 1393953971}
+  crack0: {fileID: 3469287837340948825}
+  crack1: {fileID: 303774369}
+  crack2: {fileID: 0}
+  crack3: {fileID: 0}
+  crack4: {fileID: 0}
+  crack5: {fileID: 0}
+  crack6: {fileID: 0}
+  crack7: {fileID: 0}
+  crack8: {fileID: 0}
+  crack9: {fileID: 0}
   MoveEmScript: {fileID: 0}
 --- !u!1 &919132149304855624
 GameObject:
@@ -29180,6 +29394,7 @@ GameObject:
   - component: {fileID: 3469287837340948823}
   - component: {fileID: 1711813855763148189}
   - component: {fileID: 3469287837340948824}
+  - component: {fileID: 3469287837340948825}
   m_Layer: 0
   m_Name: Crack
   m_TagString: Crack1
@@ -30890,6 +31105,16 @@ MonoBehaviour:
   heavy: 0
   master: {fileID: 247302658}
   car: {fileID: 1393953971}
+  crack0: {fileID: 3469287837340948825}
+  crack1: {fileID: 303774369}
+  crack2: {fileID: 747119792}
+  crack3: {fileID: 2024776446}
+  crack4: {fileID: 983105021}
+  crack5: {fileID: 1402840581}
+  crack6: {fileID: 1643293405}
+  crack7: {fileID: 1052707493}
+  crack8: {fileID: 439080273}
+  crack9: {fileID: 1706777303}
   MoveEmScript: {fileID: 1957997998}
 --- !u!54 &2918908122470974234
 Rigidbody:
@@ -31254,6 +31479,16 @@ MonoBehaviour:
   heavy: 1
   master: {fileID: 247302658}
   car: {fileID: 1393953971}
+  crack0: {fileID: 3469287837340948825}
+  crack1: {fileID: 0}
+  crack2: {fileID: 0}
+  crack3: {fileID: 0}
+  crack4: {fileID: 0}
+  crack5: {fileID: 0}
+  crack6: {fileID: 0}
+  crack7: {fileID: 0}
+  crack8: {fileID: 0}
+  crack9: {fileID: 0}
   MoveEmScript: {fileID: 0}
 --- !u!33 &3469287837340948823
 MeshFilter:
@@ -31276,6 +31511,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.014390713, z: 0.09}
   m_Center: {x: 0, y: 0.000046683486, z: 0.00014402506}
+--- !u!114 &3469287837340948825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149304855624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  crack: 1
+  starter: 1
+  rend: {fileID: 1711813855763148189}
+  soil: {fileID: 1185556449}
+  cement: {fileID: 54513573}
+  alum: {fileID: 684690822}
+  steel: {fileID: 786393944}
+  button: {fileID: 2140256165}
 --- !u!1 &3479571378655919939
 GameObject:
   m_ObjectHideFlags: 0

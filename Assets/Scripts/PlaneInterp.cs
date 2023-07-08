@@ -16,6 +16,16 @@ public class PlaneInterp : MonoBehaviour
         public bool heavy;
         public Master master;
         public Car car;
+        public Crack0 crack0;
+        public Crack1 crack1;
+        public Crack2 crack2;
+        public Crack3 crack3;
+        public Crack4 crack4;
+        public Crack5 crack5;
+        public Crack6 crack6;
+        public Crack7 crack7;
+        public Crack8 crack8;
+        public Crack9 crack9;
         private float startTime;
         private float journeyLength;
         public MoveEm MoveEmScript;
@@ -68,13 +78,13 @@ public class PlaneInterp : MonoBehaviour
                 
                 int randoNum = Random.Range(0, 3);
                 
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack0.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack0.starter == 1)
                 {
                     car.rends_Soil[0].enabled = false;
                     car.rends_Cem[0].enabled = false;
@@ -90,13 +100,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack1.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack1.starter == 1)
                 {
                     car.rends_Soil[1].enabled = false;
                     car.rends_Cem[1].enabled = false;
@@ -112,13 +122,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack2.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack2.starter == 1)
                 {
                     car.rends_Soil[2].enabled = false;
                     car.rends_Cem[2].enabled = false;
@@ -134,13 +144,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack3.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack3.starter == 1)
                 {
                     car.rends_Soil[3].enabled = false;
                     car.rends_Cem[3].enabled = false;
@@ -156,13 +166,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack4.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack4.starter == 1)
                 {
                     car.rends_Soil[4].enabled = false;
                     car.rends_Cem[4].enabled = false;
@@ -178,13 +188,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack5.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack5.starter == 1)
                 {
                     car.rends_Soil[5].enabled = false;
                     car.rends_Cem[5].enabled = false;
@@ -200,13 +210,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack6.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack6.starter == 1)
                 {
                     car.rends_Soil[6].enabled = false;
                     car.rends_Cem[6].enabled = false;
@@ -222,13 +232,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack7.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack7.starter == 1)
                 {
                     car.rends_Soil[7].enabled = false;
                     car.rends_Cem[7].enabled = false;
@@ -244,13 +254,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack8.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack8.starter == 1)
                 {
                     car.rends_Soil[8].enabled = false;
                     car.rends_Cem[8].enabled = false;
@@ -266,13 +276,13 @@ public class PlaneInterp : MonoBehaviour
             {
                 MeshRenderer rend = other.GetComponent<MeshRenderer>();
                 int randoNum = Random.Range(0, 3);
-                if (rend.enabled == true)
+                if (rend.enabled == true && crack9.crack == 0)
                 {
                     master.LoseStar();
                     MoveEmScript.MoveEmNow(this.gameObject.transform);
                     Destroy(this.gameObject);
                 }
-                else if(numOfHoles > 0 && randoNum == 1)
+                else if(numOfHoles > 0 && randoNum == 1 && crack9.starter == 1)
                 {
                     car.rends_Soil[9].enabled = false;
                     car.rends_Cem[9].enabled = false;
