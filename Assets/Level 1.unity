@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2401,7 +2401,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 303774364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211d24b4bf2dace4c92850d787f8121a, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
@@ -4116,18 +4116,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 439080268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87c621f951a8585468b3060c3ddfbd5f, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
   crack: 1
+  starter: 1
   rend: {fileID: 439080271}
   soil: {fileID: 1184121270}
   cement: {fileID: 1651960196}
   alum: {fileID: 2103711175}
   steel: {fileID: 939998801}
   button: {fileID: 1455607615}
-  starter: 1
 --- !u!1 &535396597
 GameObject:
   m_ObjectHideFlags: 0
@@ -5261,18 +5261,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 747119787}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f01a83262423143926c8fd58ca96cf, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
   crack: 1
+  starter: 1
   rend: {fileID: 747119789}
   soil: {fileID: 1212132189}
   cement: {fileID: 674690838}
   alum: {fileID: 1255170898}
   steel: {fileID: 177691958}
   button: {fileID: 1677265726}
-  starter: 1
 --- !u!1 &767396185
 GameObject:
   m_ObjectHideFlags: 0
@@ -7002,18 +7002,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 983105016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4edfc47782c63184ebeab0b243f72e1e, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
   crack: 1
+  starter: 1
   rend: {fileID: 983105018}
   soil: {fileID: 23209309}
   cement: {fileID: 57024325}
   alum: {fileID: 144953923}
   steel: {fileID: 29725343}
   button: {fileID: 796908149}
-  starter: 1
 --- !u!1 &1010541679
 GameObject:
   m_ObjectHideFlags: 0
@@ -7280,18 +7280,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1052707488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ca7b19f2eacb734fa91e2e8e3598d3d, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
   crack: 1
+  starter: 1
   rend: {fileID: 1052707491}
   soil: {fileID: 84913519}
   cement: {fileID: 103709398}
   alum: {fileID: 1740234824}
   steel: {fileID: 1308360450}
   button: {fileID: 211391471}
-  starter: 1
 --- !u!1 &1057039457
 GameObject:
   m_ObjectHideFlags: 0
@@ -9895,18 +9895,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402840576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 559cef05c4299a740bcc6fdbe075c5e9, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
   crack: 1
+  starter: 1
   rend: {fileID: 1402840578}
   soil: {fileID: 1704950150}
   cement: {fileID: 1443485435}
   alum: {fileID: 1429487393}
   steel: {fileID: 11612548}
   button: {fileID: 1862556573}
-  starter: 1
 --- !u!1 &1418984380
 GameObject:
   m_ObjectHideFlags: 0
@@ -24787,18 +24787,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1643293400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935aa6227ce6c1649b7a4be0de0cb82a, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
   crack: 1
+  starter: 1
   rend: {fileID: 1643293403}
   soil: {fileID: 699598973}
   cement: {fileID: 796802993}
   alum: {fileID: 1822479682}
   steel: {fileID: 826610689}
   button: {fileID: 1624084543}
-  starter: 1
 --- !u!1 &1651960194
 GameObject:
   m_ObjectHideFlags: 0
@@ -25457,18 +25457,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1706777298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f37c319fa49cf842822f053f1c8c2ce, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
   crack: 1
+  starter: 1
   rend: {fileID: 1706777301}
   soil: {fileID: 1585597534}
   cement: {fileID: 953690829}
   alum: {fileID: 2000278163}
   steel: {fileID: 2001260966}
   button: {fileID: 866906745}
-  starter: 1
 --- !u!1 &1714358567
 GameObject:
   m_ObjectHideFlags: 0
@@ -27821,18 +27821,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2024776441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: babd7c180c4c32b44a9a2dfdcf463738, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a4922dea766dd488d9605a5fa593c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
   crack: 1
+  starter: 1
   rend: {fileID: 2024776443}
   soil: {fileID: 2038340826}
   cement: {fileID: 1995128099}
   alum: {fileID: 540059845}
   steel: {fileID: 332688988}
   button: {fileID: 1874403998}
-  starter: 1
 --- !u!1 &2026565970
 GameObject:
   m_ObjectHideFlags: 0
@@ -29372,7 +29372,7 @@ MonoBehaviour:
   master: {fileID: 247302658}
   car: {fileID: 1393953971}
   crack0: {fileID: 3469287837340948825}
-  crack1: {fileID: 303774369}
+  crack1: {fileID: 0}
   crack2: {fileID: 0}
   crack3: {fileID: 0}
   crack4: {fileID: 0}
