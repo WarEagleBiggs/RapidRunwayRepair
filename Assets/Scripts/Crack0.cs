@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -18,17 +19,24 @@ public class Crack0 : MonoBehaviour
     public MeshRenderer steel;
     public GameObject outline;
     public GameObject button;
+    public Outline outlineScript;
+    public void Start()
+    {
+        outlineScript = outline.GetComponent<Outline>();
+    }
 
     // Functions called when a material fills crack
     // - Adds hit points to counter
     // - updates starter that the spot isn't empty/ had its first crack
     // - Sets crack back to 1, planes safely fly over
     public void addSoil()
-    {
+    {  
         counter = 1;
         crack = 1;
         starter = 0;
         outline.SetActive(true);
+        Color newColor = new Color(255, 86, 86, 255);
+        outlineScript.OutlineColor = newColor;
     }
 
     public void addCem()
