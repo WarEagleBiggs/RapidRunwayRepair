@@ -36,7 +36,7 @@ public class Crack0 : MonoBehaviour
         starter = 0;
         outline.SetActive(true);
         outlineScript.outlineColor = Color.red;
-        
+        outlineScript.needsUpdate = true;
     }
 
     public void addCem()
@@ -45,6 +45,9 @@ public class Crack0 : MonoBehaviour
         crack = 1;
         starter = 0;
         outline.SetActive(true);
+        outlineScript.outlineColor = Color.Lerp(Color.red,Color.yellow, .5f);
+        outlineScript.needsUpdate = true;
+
     }
 
     public void addAlum()
@@ -53,6 +56,9 @@ public class Crack0 : MonoBehaviour
         crack = 1;
         starter = 0;
         outline.SetActive(true);
+        outlineScript.outlineColor = Color.yellow;
+        outlineScript.needsUpdate = true;
+
 
     }
 
@@ -62,6 +68,9 @@ public class Crack0 : MonoBehaviour
         crack = 1;
         starter = 0;
         outline.SetActive(true);
+        outlineScript.outlineColor = Color.green;
+        outlineScript.needsUpdate = true;
+
 
 
     }
@@ -79,6 +88,21 @@ public class Crack0 : MonoBehaviour
             if (counter > 0)
             {   // damage the material
                 counter = counter - 1;
+                if (counter == 1)
+                {
+                    outlineScript.outlineColor = Color.red;
+                    outlineScript.needsUpdate = true;
+                }
+                else if (counter == 2)
+                {
+                    outlineScript.outlineColor = Color.Lerp(Color.red,Color.yellow, .5f);
+                    outlineScript.needsUpdate = true;
+                }
+                else if (counter == 3)
+                { 
+                    outlineScript.outlineColor = Color.yellow;
+                    outlineScript.needsUpdate = true;
+                }
                 // if the material is spent, create a crack
                 if (counter <= 0)
                 {   // turn off material rends, and turn on crack rend
