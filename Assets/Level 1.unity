@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2068,12 +2068,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5bad70ae7f3ed24faf3d931d597f689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlaying: 1
   duration: 15
   timer: 0
+  hasHappened: 0
   numTxt: {fileID: 1175681109}
   planeTxt: {fileID: 1231526032}
   coinTxt: {fileID: 399692069}
-  hasHappened: 0
   planeList: []
   clickSfx: {fileID: 247302659}
   isStar1Alive: 1
@@ -2103,7 +2104,6 @@ MonoBehaviour:
   - {fileID: 211391471}
   - {fileID: 1455607615}
   - {fileID: 866906745}
-  isPlaying: 1
   planeCount: 10
   starCount: 3
   coinCount: 25
@@ -29370,7 +29370,6 @@ MonoBehaviour:
   medium: 0
   heavy: 0
   master: {fileID: 247302658}
-  car: {fileID: 1393953971}
   crack0: {fileID: 3469287837340948825}
   crack1: {fileID: 0}
   crack2: {fileID: 0}
@@ -29382,6 +29381,10 @@ MonoBehaviour:
   crack8: {fileID: 0}
   crack9: {fileID: 0}
   MoveEmScript: {fileID: 0}
+  rends_Soil: []
+  rends_Cem: []
+  rends_Alum: []
+  rends_Stl: []
 --- !u!1 &919132149304855624
 GameObject:
   m_ObjectHideFlags: 0
@@ -31104,7 +31107,6 @@ MonoBehaviour:
   medium: 1
   heavy: 0
   master: {fileID: 247302658}
-  car: {fileID: 1393953971}
   crack0: {fileID: 3469287837340948825}
   crack1: {fileID: 303774369}
   crack2: {fileID: 747119792}
@@ -31116,6 +31118,50 @@ MonoBehaviour:
   crack8: {fileID: 439080273}
   crack9: {fileID: 1706777303}
   MoveEmScript: {fileID: 1957997998}
+  rends_Soil:
+  - {fileID: 1185556449}
+  - {fileID: 1450348738}
+  - {fileID: 1212132189}
+  - {fileID: 2038340826}
+  - {fileID: 23209309}
+  - {fileID: 1704950150}
+  - {fileID: 699598973}
+  - {fileID: 84913519}
+  - {fileID: 1184121270}
+  - {fileID: 1585597534}
+  rends_Cem:
+  - {fileID: 54513573}
+  - {fileID: 814764791}
+  - {fileID: 674690838}
+  - {fileID: 1995128099}
+  - {fileID: 57024325}
+  - {fileID: 1443485435}
+  - {fileID: 796802993}
+  - {fileID: 103709398}
+  - {fileID: 1651960196}
+  - {fileID: 953690829}
+  rends_Alum:
+  - {fileID: 684690822}
+  - {fileID: 1047028180}
+  - {fileID: 1255170898}
+  - {fileID: 540059845}
+  - {fileID: 144953923}
+  - {fileID: 1429487393}
+  - {fileID: 1822479682}
+  - {fileID: 1740234824}
+  - {fileID: 2103711175}
+  - {fileID: 2000278163}
+  rends_Stl:
+  - {fileID: 786393944}
+  - {fileID: 61034695}
+  - {fileID: 177691958}
+  - {fileID: 332688988}
+  - {fileID: 29725343}
+  - {fileID: 11612548}
+  - {fileID: 826610689}
+  - {fileID: 1308360450}
+  - {fileID: 939998801}
+  - {fileID: 2001260966}
 --- !u!54 &2918908122470974234
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31478,7 +31524,6 @@ MonoBehaviour:
   medium: 0
   heavy: 1
   master: {fileID: 247302658}
-  car: {fileID: 1393953971}
   crack0: {fileID: 3469287837340948825}
   crack1: {fileID: 0}
   crack2: {fileID: 0}
@@ -31490,6 +31535,10 @@ MonoBehaviour:
   crack8: {fileID: 0}
   crack9: {fileID: 0}
   MoveEmScript: {fileID: 0}
+  rends_Soil: []
+  rends_Cem: []
+  rends_Alum: []
+  rends_Stl: []
 --- !u!33 &3469287837340948823
 MeshFilter:
   m_ObjectHideFlags: 0
