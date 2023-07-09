@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2414,6 +2414,7 @@ MonoBehaviour:
   steel: {fileID: 61034695}
   outline: {fileID: 1923745265}
   button: {fileID: 778857583}
+  outlineScript: {fileID: 0}
 --- !u!1 &317651670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,6 +4131,7 @@ MonoBehaviour:
   steel: {fileID: 939998801}
   outline: {fileID: 791259436}
   button: {fileID: 1455607615}
+  outlineScript: {fileID: 0}
 --- !u!1 &535396597
 GameObject:
   m_ObjectHideFlags: 0
@@ -5392,6 +5394,7 @@ MonoBehaviour:
   steel: {fileID: 177691958}
   outline: {fileID: 1228778745}
   button: {fileID: 1677265726}
+  outlineScript: {fileID: 0}
 --- !u!1 &767396185
 GameObject:
   m_ObjectHideFlags: 0
@@ -7482,6 +7485,7 @@ MonoBehaviour:
   steel: {fileID: 29725343}
   outline: {fileID: 890185511}
   button: {fileID: 796908149}
+  outlineScript: {fileID: 0}
 --- !u!1 &1010541679
 GameObject:
   m_ObjectHideFlags: 0
@@ -7877,6 +7881,7 @@ MonoBehaviour:
   steel: {fileID: 1308360450}
   outline: {fileID: 1803385063}
   button: {fileID: 211391471}
+  outlineScript: {fileID: 0}
 --- !u!1 &1057039457
 GameObject:
   m_ObjectHideFlags: 0
@@ -10766,6 +10771,7 @@ MonoBehaviour:
   steel: {fileID: 11612548}
   outline: {fileID: 1468892211}
   button: {fileID: 1862556573}
+  outlineScript: {fileID: 0}
 --- !u!1 &1418984380
 GameObject:
   m_ObjectHideFlags: 0
@@ -10811,7 +10817,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh47240
+  m_Name: pb_Mesh59166
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25775,6 +25781,7 @@ MonoBehaviour:
   steel: {fileID: 826610689}
   outline: {fileID: 572251627}
   button: {fileID: 1624084543}
+  outlineScript: {fileID: 0}
 --- !u!1 &1651960194
 GameObject:
   m_ObjectHideFlags: 0
@@ -26446,6 +26453,7 @@ MonoBehaviour:
   steel: {fileID: 2001260966}
   outline: {fileID: 1096189621}
   button: {fileID: 866906745}
+  outlineScript: {fileID: 0}
 --- !u!1 &1714358567
 GameObject:
   m_ObjectHideFlags: 0
@@ -27979,7 +27987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineColor: {r: 1, g: 0.33490568, b: 0.33490568, a: 1}
   outlineWidth: 2
   precomputeOutline: 0
   bakeKeys: []
@@ -29043,6 +29051,7 @@ MonoBehaviour:
   steel: {fileID: 332688988}
   outline: {fileID: 901106465}
   button: {fileID: 1874403998}
+  outlineScript: {fileID: 0}
 --- !u!1 &2026565970
 GameObject:
   m_ObjectHideFlags: 0
@@ -32792,6 +32801,7 @@ MonoBehaviour:
   steel: {fileID: 786393944}
   outline: {fileID: 1045443228}
   button: {fileID: 2140256165}
+  outlineScript: {fileID: 0}
 --- !u!1 &3479571378655919939
 GameObject:
   m_ObjectHideFlags: 0

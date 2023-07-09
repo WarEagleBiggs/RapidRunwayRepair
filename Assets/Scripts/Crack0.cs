@@ -35,8 +35,8 @@ public class Crack0 : MonoBehaviour
         crack = 1;
         starter = 0;
         outline.SetActive(true);
-        Color newColor = new Color(255, 86, 86, 255);
-        outlineScript.outlineColor = newColor;
+        outlineScript.outlineColor = Color.red;
+        
     }
 
     public void addCem()
