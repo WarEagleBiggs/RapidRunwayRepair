@@ -16,6 +16,7 @@ public class Crack0 : MonoBehaviour
     public MeshRenderer cement;
     public MeshRenderer alum;
     public MeshRenderer steel;
+    public GameObject outline;
     public GameObject button;
 
     // Functions called when a material fills crack
@@ -27,6 +28,7 @@ public class Crack0 : MonoBehaviour
         counter = 1;
         crack = 1;
         starter = 0;
+        outline.SetActive(true);
     }
 
     public void addCem()
@@ -34,7 +36,7 @@ public class Crack0 : MonoBehaviour
         counter = 2;
         crack = 1;
         starter = 0;
-
+        outline.SetActive(true);
     }
 
     public void addAlum()
@@ -42,6 +44,8 @@ public class Crack0 : MonoBehaviour
         counter = 3;
         crack = 1;
         starter = 0;
+        outline.SetActive(true);
+
     }
 
     public void addStl()
@@ -49,6 +53,8 @@ public class Crack0 : MonoBehaviour
         counter = 4;
         crack = 1;
         starter = 0;
+        outline.SetActive(true);
+
 
     }
     
@@ -68,6 +74,7 @@ public class Crack0 : MonoBehaviour
                 // if the material is spent, create a crack
                 if (counter <= 0)
                 {   // turn off material rends, and turn on crack rend
+                    outline.SetActive(false);
                     rend.enabled = true;
                     soil.enabled = false;
                     cement.enabled = false;

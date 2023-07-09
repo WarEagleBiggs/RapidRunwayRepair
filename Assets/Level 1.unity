@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2412,6 +2412,7 @@ MonoBehaviour:
   cement: {fileID: 814764791}
   alum: {fileID: 1047028180}
   steel: {fileID: 61034695}
+  outline: {fileID: 1923745265}
   button: {fileID: 778857583}
 --- !u!1 &317651670
 GameObject:
@@ -4127,6 +4128,7 @@ MonoBehaviour:
   cement: {fileID: 1651960196}
   alum: {fileID: 2103711175}
   steel: {fileID: 939998801}
+  outline: {fileID: 791259436}
   button: {fileID: 1455607615}
 --- !u!1 &535396597
 GameObject:
@@ -5388,6 +5390,7 @@ MonoBehaviour:
   cement: {fileID: 674690838}
   alum: {fileID: 1255170898}
   steel: {fileID: 177691958}
+  outline: {fileID: 1228778745}
   button: {fileID: 1677265726}
 --- !u!1 &767396185
 GameObject:
@@ -7477,6 +7480,7 @@ MonoBehaviour:
   cement: {fileID: 57024325}
   alum: {fileID: 144953923}
   steel: {fileID: 29725343}
+  outline: {fileID: 890185511}
   button: {fileID: 796908149}
 --- !u!1 &1010541679
 GameObject:
@@ -7871,6 +7875,7 @@ MonoBehaviour:
   cement: {fileID: 103709398}
   alum: {fileID: 1740234824}
   steel: {fileID: 1308360450}
+  outline: {fileID: 1803385063}
   button: {fileID: 211391471}
 --- !u!1 &1057039457
 GameObject:
@@ -10759,6 +10764,7 @@ MonoBehaviour:
   cement: {fileID: 1443485435}
   alum: {fileID: 1429487393}
   steel: {fileID: 11612548}
+  outline: {fileID: 1468892211}
   button: {fileID: 1862556573}
 --- !u!1 &1418984380
 GameObject:
@@ -25767,6 +25773,7 @@ MonoBehaviour:
   cement: {fileID: 796802993}
   alum: {fileID: 1822479682}
   steel: {fileID: 826610689}
+  outline: {fileID: 572251627}
   button: {fileID: 1624084543}
 --- !u!1 &1651960194
 GameObject:
@@ -26437,6 +26444,7 @@ MonoBehaviour:
   cement: {fileID: 953690829}
   alum: {fileID: 2000278163}
   steel: {fileID: 2001260966}
+  outline: {fileID: 1096189621}
   button: {fileID: 866906745}
 --- !u!1 &1714358567
 GameObject:
@@ -29033,6 +29041,7 @@ MonoBehaviour:
   cement: {fileID: 1995128099}
   alum: {fileID: 540059845}
   steel: {fileID: 332688988}
+  outline: {fileID: 901106465}
   button: {fileID: 1874403998}
 --- !u!1 &2026565970
 GameObject:
@@ -32781,6 +32790,7 @@ MonoBehaviour:
   cement: {fileID: 54513573}
   alum: {fileID: 684690822}
   steel: {fileID: 786393944}
+  outline: {fileID: 1045443228}
   button: {fileID: 2140256165}
 --- !u!1 &3479571378655919939
 GameObject:
