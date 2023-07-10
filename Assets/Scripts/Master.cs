@@ -37,6 +37,19 @@ public class Master : MonoBehaviour
     public GameObject MaterialScreen;
     public GameObject CrackBtns;
     public List<GameObject> IndiCrckBtns;
+
+    public GameObject darkenStl;
+
+    public GameObject darkenAlum;
+
+    public GameObject darkenCem;
+
+    public GameObject darkenSoil;
+    public GameObject stlBtn;
+    public GameObject alumButton;
+    public GameObject cemBtn;
+    public GameObject soilButton;
+    
     // Game starting values
     public int planeCount = 10;
     public int starCount = 3;
@@ -82,6 +95,62 @@ public class Master : MonoBehaviour
 
             numTxt.SetText(timer.ToString("#0") + " SEC");
             planeTxt.SetText(planeCount.ToString());
+            if (coinCount < 20)
+            {
+                darkenStl.SetActive(true);
+                stlBtn.SetActive(false);
+                if (coinCount < 15)
+                {
+                    darkenAlum.SetActive(true);
+                    alumButton.SetActive(false);
+                    if (coinCount < 10)
+                    {
+                        darkenCem.SetActive(true);
+                        cemBtn.SetActive(false);
+                        if (coinCount < 5)
+                        {
+                            darkenSoil.SetActive(true);
+                            soilButton.SetActive(false);
+                        }
+                        else
+                        {
+                            darkenSoil.SetActive(false);
+                            soilButton.SetActive(true);
+
+                        }
+                    }
+                    else
+                    {
+                        darkenCem.SetActive(false);
+                        darkenSoil.SetActive(false);
+                        soilButton.SetActive(true);
+                        cemBtn.SetActive(true);               
+
+
+                    }
+                }
+                else
+                {
+                    darkenAlum.SetActive(false);
+                    darkenCem.SetActive(false);
+                    darkenSoil.SetActive(false);
+                    soilButton.SetActive(true);
+                    cemBtn.SetActive(true);               
+                    alumButton.SetActive(true);
+                    
+                }
+            }
+            else
+            {
+                darkenStl.SetActive(false);
+                darkenAlum.SetActive(false);
+                darkenCem.SetActive(false);
+                darkenSoil.SetActive(false);
+                stlBtn.SetActive(true);
+                soilButton.SetActive(true);
+                alumButton.SetActive(true);
+                cemBtn.SetActive(true);               
+            }
         }
         // End of game success conditions
         if (planeCount <= 0)
