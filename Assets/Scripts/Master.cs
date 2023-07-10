@@ -328,6 +328,8 @@ public class Master : MonoBehaviour
             coinCount = coinCount - 10;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
+            IndiCrckBtns[currHole].SetActive(false);
+            currHole = -1;
             MaterialScreen.SetActive(false);
             
         }
@@ -350,6 +352,8 @@ public class Master : MonoBehaviour
             coinCount = coinCount - 15;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
+            IndiCrckBtns[currHole].SetActive(false);
+            currHole = -1;
             MaterialScreen.SetActive(false);
         }
     }
@@ -370,6 +374,8 @@ public class Master : MonoBehaviour
             coinCount = coinCount - 20;
             coinTxt.SetText(coinCount.ToString() + " COINS");
             clickSfx.Play();
+            IndiCrckBtns[currHole].SetActive(false);
+            currHole = -1;
             MaterialScreen.SetActive(false);
         }
     }
