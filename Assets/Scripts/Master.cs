@@ -53,16 +53,37 @@ public class Master : MonoBehaviour
     public GameObject soilButton;
     
     // Game starting values
-    public int planeCount = 10;
+    public int planeCount;
     public int starCount = 3;
-    public int coinCount = 25;
+    public int coinCount;
     // keeps track of material chosen to fill crack
     public List<int> crackMtrl;
-    
-    
+
+
     private void Start()
     {
         timer = duration;
+        if (Singleton.GetInstance.isLevel1 == true)
+        {
+            planeCount = 5;
+            coinCount = 15;
+
+        }
+        else if (Singleton.GetInstance.isLevel2 == true)
+        {
+            planeCount = 7;
+            coinCount = 20;
+        }
+        else if (Singleton.GetInstance.isLevel3 == true)
+        {
+            planeCount = 10;
+            coinCount = 25;
+        }
+        else if (Singleton.GetInstance.isLevel4 == true)
+        {
+            planeCount = 12;
+            coinCount = 30;
+        }
     }
 
 
@@ -97,7 +118,7 @@ public class Master : MonoBehaviour
 
             numTxt.SetText(timer.ToString("#0") + " SEC");
             planeTxt.SetText(planeCount.ToString());
-            if (coinCount < 20)
+            if (coinCount < 20 )
             {
                 darkenStl.SetActive(true);
                 stlBtn.SetActive(false);
@@ -123,7 +144,11 @@ public class Master : MonoBehaviour
                     }
                     else
                     {
-                        darkenCem.SetActive(false);
+                        if (Singleton.GetInstance.isLevel1 == false)
+                        {
+                            darkenCem.SetActive(false);
+                        }
+
                         darkenSoil.SetActive(false);
                         soilButton.SetActive(true);
                         cemBtn.SetActive(true);               
@@ -133,8 +158,17 @@ public class Master : MonoBehaviour
                 }
                 else
                 {
-                    darkenAlum.SetActive(false);
-                    darkenCem.SetActive(false);
+                    if (Singleton.GetInstance.isLevel1 == false)
+                    {
+                        darkenCem.SetActive(false);
+
+                        if (Singleton.GetInstance.isLevel2 == false)
+                        {
+                            darkenAlum.SetActive(false);
+
+                        }
+                    }
+
                     darkenSoil.SetActive(false);
                     soilButton.SetActive(true);
                     cemBtn.SetActive(true);               
@@ -144,9 +178,20 @@ public class Master : MonoBehaviour
             }
             else
             {
-                darkenStl.SetActive(false);
-                darkenAlum.SetActive(false);
-                darkenCem.SetActive(false);
+                if (Singleton.GetInstance.isLevel1 == false)
+                {
+                    darkenCem.SetActive(false);
+
+                    if (Singleton.GetInstance.isLevel2 == false)
+                    {
+                        darkenAlum.SetActive(false);
+
+                        if (Singleton.GetInstance.isLevel3 == false)
+                        {
+                            darkenStl.SetActive(false);
+                        }
+                    }
+                }
                 darkenSoil.SetActive(false);
                 stlBtn.SetActive(true);
                 soilButton.SetActive(true);
