@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11828,9 +11828,9 @@ GameObject:
   - component: {fileID: 1393953970}
   - component: {fileID: 1393953973}
   - component: {fileID: 1393953974}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: car
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11844,7 +11844,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1393953969}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 6.88
+  m_Radius: 2.93
   m_Speed: 40
   m_Acceleration: 100
   avoidancePriority: 50
@@ -12245,7 +12245,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23726
+  m_Name: pb_Mesh27534
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13465,7 +13465,7 @@ GameObject:
   - component: {fileID: 1593858169}
   - component: {fileID: 1593858168}
   - component: {fileID: 1593858167}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Outline
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}

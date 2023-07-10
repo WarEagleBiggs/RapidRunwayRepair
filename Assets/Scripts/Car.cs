@@ -28,11 +28,19 @@ public class Car : MonoBehaviour
     public Crack0 crack8;
     public Crack0 crack9;
 
-
     public bool isSoil;
     void Update()
     {
         agent.SetDestination(target.transform.position);
+    }
+
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "car")
+        {
+            Physics.IgnoreLayerCollision(3,3, true);
+        }
     }
 
 

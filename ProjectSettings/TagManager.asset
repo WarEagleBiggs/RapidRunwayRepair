@@ -20,11 +20,12 @@ TagManager:
   - Medium
   - Heavy
   - home
+  - car
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Car
   - Water
   - UI
   - 
