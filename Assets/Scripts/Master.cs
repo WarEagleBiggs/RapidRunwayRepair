@@ -24,6 +24,8 @@ public class Master : MonoBehaviour
     public List<GameObject> planeList;
     // Click audio
     public AudioSource clickSfx;
+
+    public AudioSource ExplosionSFX;
     // Star variables
     public bool isStar1Alive = true;
     public bool isStar2Alive = true;
