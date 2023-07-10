@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class Master : MonoBehaviour
 {   // VARIABLES //
@@ -101,10 +102,23 @@ public class Master : MonoBehaviour
     
     // spawns plane
     public GameObject objectToInstantiate;
+    public GameObject objectToInstantiate2;
+    
+    public int topOrBottom;
     public void Spawn()
     {
-        GameObject obj = Instantiate(objectToInstantiate);
-        obj.SetActive(true);
+        topOrBottom = Random.Range(0, 2);
+
+        if (topOrBottom == 0)
+        {
+            GameObject obj = Instantiate(objectToInstantiate);
+            obj.SetActive(true);
+        } else if (topOrBottom == 1)
+        {
+            GameObject obj = Instantiate(objectToInstantiate2);
+            obj.SetActive(true);
+        }
+        
         
     }
 

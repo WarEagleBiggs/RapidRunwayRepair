@@ -6,8 +6,8 @@ using Random = UnityEngine.Random;
 
 public class PlaneInterp : MonoBehaviour
 {
-     public Transform startPos;  // Starting position
-        public Transform endPos;    // Ending position
+     public Transform startPos1;  // Starting position
+        public Transform endPos1;    // Ending position
         public float speed = 5f;    // Movement speed
         public int numOfHoles;
 
@@ -37,7 +37,8 @@ public class PlaneInterp : MonoBehaviour
         private void Start()
         {
             startTime = Time.time;
-            journeyLength = Vector3.Distance(startPos.position, endPos.position);
+            journeyLength = Vector3.Distance(startPos1.position, endPos1.position);
+
         }
     
         private void Update()
@@ -45,7 +46,7 @@ public class PlaneInterp : MonoBehaviour
             float distanceCovered = (Time.time - startTime) * speed;
             float fractionOfJourney = distanceCovered / journeyLength;
     
-            transform.position = Vector3.Lerp(startPos.position, endPos.position, fractionOfJourney);
+            transform.position = Vector3.Lerp(startPos1.position, endPos1.position, fractionOfJourney);
     
             if (fractionOfJourney >= 1f)
             {
