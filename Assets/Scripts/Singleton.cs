@@ -17,6 +17,11 @@ public class Singleton : MonoBehaviour
     public int level2Stars;
     public int level3Stars;
     public int level4Stars;
+    public bool isLevel1;
+    public bool isLevel2;
+    public bool isLevel3;
+    public bool isLevel4;
+
 
     public static Singleton GetInstance => instance;
 

@@ -34,8 +34,16 @@ public class MainMenu : MonoBehaviour
     public AudioSource clickSfx;
     // ints tracking number of stars showing
     public List<int> StarsCounter;
-    
-    
+
+
+    private void Start()
+    {
+        Singleton.GetInstance.isLevel1 = false;
+        Singleton.GetInstance.isLevel2 = false;
+        Singleton.GetInstance.isLevel3 = false;
+        Singleton.GetInstance.isLevel4 = false;
+    }
+
     private void Update()
     {   // updates whether levels are locked
         isLvl2Unlocked = Singleton.GetInstance.hasLevel2;
@@ -159,16 +167,20 @@ public class MainMenu : MonoBehaviour
     }
 
     public void ToLevel1()
-    {        
+    {    
+        Singleton.GetInstance.isLevel1 = true;
         clickSfx.Play();
         SceneManager.LoadScene(1);
+        
     }
     public void ToLevel2()
     {
         if (isLvl2Unlocked)
         {
             clickSfx.Play();
-            SceneManager.LoadScene(1);
+            Singleton.GetInstance.isLevel2 = true;
+            SceneManager.LoadScene(2);
+            
         }
     }
     public void ToLevel3()
@@ -176,7 +188,9 @@ public class MainMenu : MonoBehaviour
         if (isLvl3Unlocked)
         {
             clickSfx.Play();
-            SceneManager.LoadScene(1);
+            Singleton.GetInstance.isLevel3 = true;
+            SceneManager.LoadScene(3);
+
         }
     }
     public void ToLevel4()
@@ -184,7 +198,8 @@ public class MainMenu : MonoBehaviour
         if (isLvl4Unlocked)
         {
             clickSfx.Play();
-            SceneManager.LoadScene(1);
+            Singleton.GetInstance.isLevel4 = true;
+            SceneManager.LoadScene(4);
         }
     }
     // updates the level's stars when called

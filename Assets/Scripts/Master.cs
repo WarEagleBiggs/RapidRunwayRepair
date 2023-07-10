@@ -166,14 +166,55 @@ public class Master : MonoBehaviour
             {
                 WinScreen.SetActive(true);
                 HmBtn.SetActive(false);
-                if (Singleton.GetInstance.level1Stars < starCount)
-                {
-                    Singleton.GetInstance.level1Stars = starCount;
-                }
 
-                if (starCount >= 2)
+                if (Singleton.GetInstance.isLevel1 == true)
                 {
-                    Singleton.GetInstance.hasLevel2 = true;
+
+                    if (Singleton.GetInstance.level1Stars < starCount)
+                    {
+                        Singleton.GetInstance.level1Stars = starCount;
+                    }
+
+                    if (starCount >= 2)
+                    {
+                        Singleton.GetInstance.hasLevel2 = true;
+                    }
+                }
+                else if (Singleton.GetInstance.isLevel2 == true)
+                {
+
+                    if (Singleton.GetInstance.level2Stars < starCount)
+                    {
+                        Singleton.GetInstance.level2Stars = starCount;
+                    }
+
+                    if (starCount >= 2)
+                    {
+                        Singleton.GetInstance.hasLevel3 = true;
+                    }
+                }
+                else if (Singleton.GetInstance.isLevel3 == true)
+                {
+
+                    if (Singleton.GetInstance.level3Stars < starCount)
+                    {
+                        Singleton.GetInstance.level3Stars = starCount;
+                    }
+
+                    if (starCount >= 2)
+                    {
+                        Singleton.GetInstance.hasLevel4 = true;
+                    }
+                }
+                else if (Singleton.GetInstance.isLevel4 == true)
+                {
+
+                    if (Singleton.GetInstance.level4Stars < starCount)
+                    {
+                        Singleton.GetInstance.level4Stars = starCount;
+                    }
+
+                   
                 }
             }
         }
