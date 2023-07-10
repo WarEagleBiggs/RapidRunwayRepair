@@ -386,52 +386,73 @@ public class Master : MonoBehaviour
     //   -has currHole remember which crack called material screen
     public void Crck0Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 0;
+
     }
     public void Crck1Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 1;
+
     }
     public void Crck2Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 2;
+
     }
     public void Crck3Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 3;
+
     }
     public void Crck4Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 4;
+
     }
     public void Crck5Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 5;
+
     }
     public void Crck6Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 6;
+
     }
     public void Crck7Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 7;
+
     }
     public void Crck8Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 8;
+
     }
     public void Crck9Btn()
     {
+        clickSfx.Play();
         MaterialScreen.SetActive(true);
         currHole = 9;
+        
+
     }
 }

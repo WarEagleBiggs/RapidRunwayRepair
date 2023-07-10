@@ -109,12 +109,14 @@ public class MainMenu : MonoBehaviour
 
     public void Tut1Next()
     {
+        clickSfx.Play();
         Tut1.SetActive(false);
         Tut2.SetActive(true);
     }
 
     public void Tut2Prev()
     {
+        clickSfx.Play();
         Tut2.SetActive(false);
         Tut1.SetActive(true);
     }
