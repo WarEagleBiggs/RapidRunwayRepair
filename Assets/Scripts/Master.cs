@@ -51,11 +51,16 @@ public class Master : MonoBehaviour
     }
 
 
+    public GameObject allCracks;
+    public GameObject allCracksBtns;
+
     // Update is called once per frame
     void Update()
     {
         if (isPlaying)
         {
+            
+            
             timer -= Time.deltaTime;
 
             if (timer <= 0f)
@@ -82,6 +87,9 @@ public class Master : MonoBehaviour
         if (planeCount <= 0)
         {
             isPlaying = false;
+            allCracks.SetActive(false);
+            allCracksBtns.SetActive(false);
+
 
             if (isPlaying == false && isStar1Alive)
             {
