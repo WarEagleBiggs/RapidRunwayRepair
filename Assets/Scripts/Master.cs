@@ -318,7 +318,7 @@ public class Master : MonoBehaviour
     public void Replay()
     {
         clickSfx.Play();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void CloseMaterial()
     {
