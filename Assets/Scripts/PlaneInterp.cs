@@ -61,7 +61,20 @@ public class PlaneInterp : MonoBehaviour
                     }
                     else if (gameObject.tag == "Medium")
                     {
-                        master.addCoin(10);
+                        if (Singleton.GetInstance.isLevel1)
+                        {
+                            master.addCoin(10);
+                        } else if (Singleton.GetInstance.isLevel2)
+                        {
+                            master.addCoin(10);
+                        } else if (Singleton.GetInstance.isLevel3)
+                        {
+                            master.addCoin(10);
+                        } else if (Singleton.GetInstance.isLevel4)
+                        {
+                            master.addCoin(15);
+                        }
+                        
                     }
                     else if (gameObject.tag == "Heavy")
                     {
