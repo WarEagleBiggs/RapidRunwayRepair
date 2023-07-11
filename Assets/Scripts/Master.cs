@@ -66,23 +66,23 @@ public class Master : MonoBehaviour
         if (Singleton.GetInstance.isLevel1 == true)
         {
             planeCount = 5;
-            coinCount = 15;
+            coinCount = 5;
 
         }
         else if (Singleton.GetInstance.isLevel2 == true)
         {
-            planeCount = 7;
-            coinCount = 20;
+            planeCount = 8;
+            coinCount = 5;
         }
         else if (Singleton.GetInstance.isLevel3 == true)
         {
             planeCount = 10;
-            coinCount = 25;
+            coinCount = 5;
         }
         else if (Singleton.GetInstance.isLevel4 == true)
         {
-            planeCount = 12;
-            coinCount = 30;
+            planeCount = 20;
+            coinCount = 5;
         }
     }
 
@@ -93,6 +93,8 @@ public class Master : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        coinTxt.SetText(coinCount.ToString() + " COINS");
+        
         if (isPlaying)
         {
             
