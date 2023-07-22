@@ -11,6 +11,10 @@ public class MainMenu : MonoBehaviour
     public GameObject Tutorial;
     public GameObject Tut1;
     public GameObject Tut2;
+    public GameObject Tut3;
+    public GameObject Tut4;
+    public GameObject Tut5;
+
 
 
     public GameObject Materials;
@@ -115,18 +119,89 @@ public class MainMenu : MonoBehaviour
         Tut2.SetActive(false);
     }
 
-    public void Tut1Next()
+    public int currTut = 1;
+    public void TutNext()
     {
-        clickSfx.Play();
-        Tut1.SetActive(false);
-        Tut2.SetActive(true);
+        if (currTut == 1)
+        {
+            currTut = 2;
+            clickSfx.Play();
+            Tut1.SetActive(false);
+            Tut2.SetActive(true);
+            Tut3.SetActive(false);
+            Tut4.SetActive(false);
+            Tut5.SetActive(false);
+        } else if (currTut == 2)
+        {
+            currTut = 3;
+            clickSfx.Play();
+            Tut1.SetActive(false);
+            Tut2.SetActive(false);
+            Tut3.SetActive(true);
+            Tut4.SetActive(false);
+            Tut5.SetActive(false);
+        } else if (currTut == 3)
+        {
+            currTut = 4;
+            clickSfx.Play();
+            Tut1.SetActive(false);
+            Tut2.SetActive(false);
+            Tut3.SetActive(false);
+            Tut4.SetActive(true);
+            Tut5.SetActive(false);
+        } else if (currTut == 4)
+        {
+            currTut = 5;
+            clickSfx.Play();
+            Tut1.SetActive(false);
+            Tut2.SetActive(false);
+            Tut3.SetActive(false);
+            Tut4.SetActive(false);
+            Tut5.SetActive(true);
+        }
+        
+        
     }
 
-    public void Tut2Prev()
+    public void TutPrev()
     {
-        clickSfx.Play();
-        Tut2.SetActive(false);
-        Tut1.SetActive(true);
+        if (currTut == 2)
+        {
+            currTut = 1;
+            clickSfx.Play();
+            Tut1.SetActive(true);
+            Tut2.SetActive(false);
+            Tut3.SetActive(false);
+            Tut4.SetActive(false);
+            Tut5.SetActive(false);
+        } else if (currTut == 3)
+        {
+            currTut = 2;
+            clickSfx.Play();
+            Tut1.SetActive(false);
+            Tut2.SetActive(true);
+            Tut3.SetActive(false);
+            Tut4.SetActive(false);
+            Tut5.SetActive(false);
+        } else if (currTut == 4)
+        {
+            currTut = 3;
+            clickSfx.Play();
+            Tut1.SetActive(false);
+            Tut2.SetActive(false);
+            Tut3.SetActive(true);
+            Tut4.SetActive(false);
+            Tut5.SetActive(false);
+        } else if (currTut == 5)
+        {
+            currTut = 4;
+            clickSfx.Play();
+            Tut1.SetActive(false);
+            Tut2.SetActive(false);
+            Tut3.SetActive(false);
+            Tut4.SetActive(true);
+            Tut5.SetActive(false);
+        }
     }
     
 
