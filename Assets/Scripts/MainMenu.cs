@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public GameObject LevelSelect;
     public GameObject Menu;
     public GameObject Tutorial;
+    public GameObject Tut0;
     public GameObject Tut1;
     public GameObject Tut2;
     public GameObject Tut3;
@@ -119,13 +120,25 @@ public class MainMenu : MonoBehaviour
         Tut2.SetActive(false);
     }
 
-    public int currTut = 1;
+    public int currTut = 0;
     public void TutNext()
     {
+        if (currTut == 0)
+        {
+            currTut = 1;
+            clickSfx.Play();
+            Tut0.SetActive(false);
+            Tut1.SetActive(true);
+            Tut2.SetActive(false);
+            Tut3.SetActive(false);
+            Tut4.SetActive(false);
+            Tut5.SetActive(false);
+        }
         if (currTut == 1)
         {
             currTut = 2;
             clickSfx.Play();
+            Tut0.SetActive(false);
             Tut1.SetActive(false);
             Tut2.SetActive(true);
             Tut3.SetActive(false);
@@ -135,6 +148,7 @@ public class MainMenu : MonoBehaviour
         {
             currTut = 3;
             clickSfx.Play();
+            Tut0.SetActive(false);
             Tut1.SetActive(false);
             Tut2.SetActive(false);
             Tut3.SetActive(true);
@@ -144,6 +158,7 @@ public class MainMenu : MonoBehaviour
         {
             currTut = 4;
             clickSfx.Play();
+            Tut0.SetActive(false);
             Tut1.SetActive(false);
             Tut2.SetActive(false);
             Tut3.SetActive(false);
@@ -153,6 +168,7 @@ public class MainMenu : MonoBehaviour
         {
             currTut = 5;
             clickSfx.Play();
+            Tut0.SetActive(false);
             Tut1.SetActive(false);
             Tut2.SetActive(false);
             Tut3.SetActive(false);
@@ -165,10 +181,23 @@ public class MainMenu : MonoBehaviour
 
     public void TutPrev()
     {
+        if (currTut == 1)
+        {
+            currTut = 0;
+            clickSfx.Play();
+            Tut0.SetActive(true);
+            Tut1.SetActive(false);
+            Tut2.SetActive(false);
+            Tut3.SetActive(false);
+            Tut4.SetActive(false);
+            Tut5.SetActive(false);
+        }
+
         if (currTut == 2)
         {
             currTut = 1;
             clickSfx.Play();
+            Tut0.SetActive(false);
             Tut1.SetActive(true);
             Tut2.SetActive(false);
             Tut3.SetActive(false);
@@ -178,6 +207,7 @@ public class MainMenu : MonoBehaviour
         {
             currTut = 2;
             clickSfx.Play();
+            Tut0.SetActive(false);
             Tut1.SetActive(false);
             Tut2.SetActive(true);
             Tut3.SetActive(false);
@@ -187,6 +217,7 @@ public class MainMenu : MonoBehaviour
         {
             currTut = 3;
             clickSfx.Play();
+            Tut0.SetActive(false);
             Tut1.SetActive(false);
             Tut2.SetActive(false);
             Tut3.SetActive(true);
@@ -196,6 +227,7 @@ public class MainMenu : MonoBehaviour
         {
             currTut = 4;
             clickSfx.Play();
+            Tut0.SetActive(false);
             Tut1.SetActive(false);
             Tut2.SetActive(false);
             Tut3.SetActive(false);
