@@ -116,8 +116,12 @@ public class MainMenu : MonoBehaviour
         clickSfx.Play();
         Menu.SetActive(false);
         Tutorial.SetActive(true);
-        Tut1.SetActive(true);
+        Tut0.SetActive(true);
+        Tut1.SetActive(false);
         Tut2.SetActive(false);
+        Tut3.SetActive(false);
+        Tut4.SetActive(false);
+
     }
 
     public int currTut = 0;
